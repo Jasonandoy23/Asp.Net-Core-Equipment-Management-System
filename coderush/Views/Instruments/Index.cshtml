@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewData["Title"] = "Instruments";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title text-primary"><i class="fa fa-cube"></i> @ViewData["Title"]</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                            title="Collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <div id="Grid"></div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                
+            </div>
+            <!-- /.box-footer-->
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+
+    <script type="text/javascript">
+        $(function () {
+
+            var dataManager = ej.DataManager({
+                url: "/api/Instruments",
+                adaptor: new ej.WebApiAdaptor(),
+                offline: true
+            });
+
+            var dataManagerLocation = ej.DataManager({
+                url: "/api/Location",
+                adaptor: new ej.WebApiAdaptor(),
+                offline: true
+            });
+
+            var dataManagerSuppliers = ej.DataManager({
+                url: "/api/Suppliers",
+                adaptor: new ej.WebApiAdaptor()
+            });
+
+            var dataManagerSections = ej.DataManager({
+                url: "/api/Sections",
+                adaptor: new ej.WebApiAdaptor(),
+                offline: true
+            });
+
+            var dataManagerUnitOfMeasure = ej.DataManager({
+                url: "/api/UnitOfMeasure",
+                adaptor: new ej.WebApiAdaptor()
+            });
+
+            dataManager.ready.done(function (e) { 
+                $("#Grid").ejGrid({
+                    dataSource: ej.DataManager({
+                        json: e.result,
+                        adaptor: new ej.remoteSaveAdaptor(),
+                        insertUrl: "/api/Instruments/Insert",
+                        updateUrl: "/api/Instruments/Update",
+                        removeUrl: "/api/Instruments/Remove",
+                    }),
+                    toolbarSettings: {
+                        showToolbar: true,
+                        toolbarItems: ["add", "edit", "delete", "update", "cancel", "search", "printGrid"]
+                    },
+                    editSettings: {
+                        allowEditing: true,
+                        allowAdding: true,
+                        allowDeleting: true,
+                        showDeleteConfirmDialog: true,
+                        editMode: "dialog"
+                    },
+                    isResponsive: true,
+                    enableResponsiveRow: true,
+                    allowSorting: true,
+                    allowSearching: true,
+                    allowFiltering: true,
+                    filterSettings: {
+                        filterType: "excel",
+                        maxFilterChoices: 100,
+                        enableCaseSensitivity: false
+                    },
+                    allowPaging: true,
+                    pageSettings: { pageSize: 10, printMode: ej.Grid.PrintMode.CurrentPage },
+                    columns: [
+                        { field: "Instru_id", headerText: 'Instru Id', isPrimaryKey: true, isIdentity: true, visible: false },
+                        { field: "Location_id", headerText: 'Location', foreignKeyField: "Location_id", foreignKeyValue: "Location_name", dataSource: dataManagerLocation },
+                        { field: "Suppliers_id", headerText: 'Supplier', foreignKeyField: "Suppliers_id", foreignKeyValue: "Suppliers_name", dataSource: dataManagerSuppliers },
+                        { field: "Sections_id", headerText: 'Section', foreignKeyField: "Sections_id", foreignKeyValue: "Sections_name", dataSource: dataManagerSections },
+                        { field: "Instru_partNo", headerText: 'Part No.' },
+                        { field: "Instru_description", headerText: 'Description' },
+                        { field: "Instru_qtyOnhand", headerText: 'Qty On-Hand', editType: "numericedit", validationRules: { required: true } },
+                        { field: "UnitOfMeasure_id", headerText: 'UOM', foreignKeyField: "UnitOfMeasure_id", foreignKeyValue: "UnitOfMeasure_name", dataSource: dataManagerUnitOfMeasure, validationRules: { required: true } },
+                        { field: "Instru_serialNo", headerText: 'Serial No.' },
+                        { field: "Instru_warrStartdate", headerText: 'Warranty start date', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
+                        { field: "Instru_warrEnddate", headerText: 'Warranty end date', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
+                        { field: "Instru_averageCost", headerText: 'Ave Cost', editType: "numericedit", format: "{0:n}", validationRules: { required: true } },
+                        { field: "Instru_assetValue", headerText: 'Asset Value', editType: "numericedit", format: "{0:n}", validationRules: { required: true } },
+                    ],
+                    actionComplete: "complete",
+                });
+            });
+
+            
+        });
+
+        function complete(args) {
+            if (args.requestType == 'beginedit') {
+                $("#" + this._id + "_dialogEdit").ejDialog({ title: "Edit Record" });
+            }
+        }
+
+
+    </script>
+}
+
