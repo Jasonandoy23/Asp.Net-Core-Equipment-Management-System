@@ -31,6 +31,136 @@ namespace coderush.Pages
             public const string ControllerName = "AutoClaveRooms";
             public const string ActionName = "SteamSterilizerMSTV";
         }
+        public static class BSLDNAExt_Centrifuge
+        {
+            public const string PageName = "Centrifuge";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/Centrifuge";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "Centrifuge";
+        }
+        public static class BSLDNAExt_Centrifuge5424
+        {
+            public const string PageName = "Centrifuge5424";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/Centrifuge5424";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "Centrifuge5424";
+        }
+        public static class BSLDNAExt_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/DellDeskComp";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class BSLDNAExt_FLUOstarOmega
+        {
+            public const string PageName = "FLUOstarOmega";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/FLUOstarOmega";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "FLUOstarOmega";
+        }
+        public static class BSLDNAExt_HaierDW_40L508DeepFreezer
+        {
+            public const string PageName = "HaierDW_40L508DeepFreezer";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/HaierDW_40L508DeepFreezer";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "HaierDW_40L508DeepFreezer";
+        }
+        public static class BSLDNAExt_HaierHYC
+        {
+            public const string PageName = "HaierHYC";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/HaierHYC";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "HaierHYC";
+        }
+        public static class BSLDNAExt_HeatSealer
+        {
+            public const string PageName = "HeatSealer";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/HeatSealer";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "HeatSealer";
+        }
+        public static class BSLDNAExt_KingFisherFlex
+        {
+            public const string PageName = "KingFisherFlex";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/KingFisherFlex";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "KingFisherFlex";
+        }
+        public static class BSLDNAExt_LPVortexMixer
+        {
+            public const string PageName = "LPVortexMixer";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/LPVortexMixer";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "LPVortexMixer";
+        }
+        public static class BSLDNAExt_MicroLabNIMBUS4
+        {
+            public const string PageName = "MicroLabNIMBUS4";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/MicroLabNIMBUS4";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "MicroLabNIMBUS4";
+        }
+        public static class BSLDNAExt_NanoDropOne
+        {
+            public const string PageName = "NanoDropOne";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/NanoDropOne";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "NanoDropOne";
+        }
+        public static class BSLDNAExt_NanoPhotometer
+        {
+            public const string PageName = "NanoPhotometer";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/NanoPhotometer";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "NanoPhotometer";
+        }
+        public static class BSLDNAExt_PerkinElmerChemagic360
+        {
+            public const string PageName = "PerkinElmerChemagic360";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/PerkinElmerChemagic360";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "PerkinElmerChemagic360";
+        }
+        public static class BSLDNAExt_PerkinElmerJanusG3
+        {
+            public const string PageName = "PerkinElmerJanusG3";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/PerkinElmerJanusG3";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "PerkinElmerJanusG3";
+        }
+        public static class BSLDNAExt_QIAsymphonySP
+        {
+            public const string PageName = "QIAsymphonySP";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/QIAsymphonySP";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "QIAsymphonySP";
+        }
+        public static class BSLDNAExt_Qubit4Fluorometer
+        {
+            public const string PageName = "Qubit4Fluorometer";
+            public const string RoleName = "BSLDNAExt";
+            public const string Path = "/BSLDNAExt/Qubit4Fluorometer";
+            public const string ControllerName = "BSLDNAExt";
+            public const string ActionName = "Qubit4Fluorometer";
+        }
+
+
 
 
 

@@ -3,10 +3,58 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace coderush.Migrations
 {
-    public partial class InitialDb : Migration
+    public partial class InitialDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "ACR_PumpOnGround",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_PumpOnGround", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_ShihlinCtrl",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_ShihlinCtrl", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_SteamSterilizerMSTV",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_SteamSterilizerMSTV", x => x.LogId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -44,6 +92,262 @@ namespace coderush.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_Centrifuge",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_Centrifuge", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_Centrifuge5424",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_Centrifuge5424", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_DellDeskComp",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_DellDeskComp", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_FLUOstarOmega",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_FLUOstarOmega", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_HaierDW_40L508DeepFreezer",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_HaierDW_40L508DeepFreezer", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_HaierHYC",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_HaierHYC", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_HeatSealer",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_HeatSealer", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_KingFisherFlex",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_KingFisherFlex", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_LPVortexMixer",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_LPVortexMixer", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_MicroLabNIMBUS4",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_MicroLabNIMBUS4", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_NanoDropOne",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_NanoDropOne", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_NanoPhotometer",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_NanoPhotometer", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_PerkinElmerChemagic360",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_PerkinElmerChemagic360", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_PerkinElmerJanusG3",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_PerkinElmerJanusG3", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_QIAsymphonySP",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_QIAsymphonySP", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BSLDNAExt_Qubit4Fluorometer",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogDate = table.Column<string>(nullable: true),
+                    LogTemperature = table.Column<string>(nullable: true),
+                    LogStatus = table.Column<string>(nullable: true),
+                    LogRemarks = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BSLDNAExt_Qubit4Fluorometer", x => x.LogId);
                 });
 
             migrationBuilder.CreateTable(
@@ -398,6 +702,15 @@ namespace coderush.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "ACR_PumpOnGround");
+
+            migrationBuilder.DropTable(
+                name: "ACR_ShihlinCtrl");
+
+            migrationBuilder.DropTable(
+                name: "ACR_SteamSterilizerMSTV");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
             migrationBuilder.DropTable(
@@ -411,6 +724,54 @@ namespace coderush.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_Centrifuge");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_Centrifuge5424");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_DellDeskComp");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_FLUOstarOmega");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_HaierDW_40L508DeepFreezer");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_HaierHYC");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_HeatSealer");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_KingFisherFlex");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_LPVortexMixer");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_MicroLabNIMBUS4");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_NanoDropOne");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_NanoPhotometer");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_PerkinElmerChemagic360");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_PerkinElmerJanusG3");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_QIAsymphonySP");
+
+            migrationBuilder.DropTable(
+                name: "BSLDNAExt_Qubit4Fluorometer");
 
             migrationBuilder.DropTable(
                 name: "Condition");

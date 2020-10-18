@@ -29,6 +29,24 @@ namespace coderush.Data
         public DbSet<coderush.Models.ACR_ShihlinCtrl> ACR_ShihlinCtrl { get; set; }        
         public DbSet<coderush.Models.ACR_SteamSterilizerMSTV> ACR_SteamSterilizerMSTV { get; set; }
 
+        public DbSet<coderush.Models.BSLDNAExt_Centrifuge> BSLDNAExt_Centrifuge { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_Centrifuge5424> BSLDNAExt_Centrifuge5424 { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_DellDeskComp> BSLDNAExt_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_FLUOstarOmega> BSLDNAExt_FLUOstarOmega { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_HaierDW_40L508DeepFreezer> BSLDNAExt_HaierDW_40L508DeepFreezer { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_HaierHYC> BSLDNAExt_HaierHYC { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_HeatSealer> BSLDNAExt_HeatSealer { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_KingFisherFlex> BSLDNAExt_KingFisherFlex { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_LPVortexMixer> BSLDNAExt_LPVortexMixer { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_MicroLabNIMBUS4> BSLDNAExt_MicroLabNIMBUS4 { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_NanoDropOne> BSLDNAExt_NanoDropOne { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_NanoPhotometer> BSLDNAExt_NanoPhotometer { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_PerkinElmerChemagic360> BSLDNAExt_PerkinElmerChemagic360 { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_PerkinElmerJanusG3> BSLDNAExt_PerkinElmerJanusG3 { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_QIAsymphonySP> BSLDNAExt_QIAsymphonySP { get; set; }
+        public DbSet<coderush.Models.BSLDNAExt_Qubit4Fluorometer> BSLDNAExt_Qubit4Fluorometer { get; set; }
+
+
 
 
 
