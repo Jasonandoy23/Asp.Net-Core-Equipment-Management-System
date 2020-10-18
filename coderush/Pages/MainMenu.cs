@@ -281,6 +281,95 @@ namespace coderush.Pages
             public const string ControllerName = "CP1";
             public const string ActionName = "ThermoFisher80";
         }
+        public static class ILLUMINALibConst_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "ILLUMINALibConst";
+            public const string Path = "/ILLUMINALibConst/Others";
+            public const string ControllerName = "ILLUMINALibConst";
+            public const string ActionName = "Others";
+        }
+        public static class ILLUMINASeqLab_NovaSeq6000
+        {
+            public const string PageName = "NovaSeq6000";
+            public const string RoleName = "ILLUMINASeqLab";
+            public const string Path = "/ILLUMINASeqLab/NovaSeq6000";
+            public const string ControllerName = "ILLUMINASeqLab";
+            public const string ActionName = "NovaSeq6000";
+        }
+        public static class ILLUMINASeqLab_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "ILLUMINASeqLab";
+            public const string Path = "/ILLUMINASeqLab/Others";
+            public const string ControllerName = "ILLUMINASeqLab";
+            public const string ActionName = "Others";
+        }
+
+        public static class Lab1_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "Lab1";
+            public const string Path = "/Lab1/DellDeskComp";
+            public const string ControllerName = "Lab1";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class Lab1_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "Lab1";
+            public const string Path = "/Lab1/Others";
+            public const string ControllerName = "Lab1";
+            public const string ActionName = "Others";
+        }
+        public static class Lab2_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "Lab2";
+            public const string Path = "/Lab2/DellDeskComp";
+            public const string ControllerName = "Lab2";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class Lab2_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "Lab2";
+            public const string Path = "/Lab2/Others";
+            public const string ControllerName = "Lab2";
+            public const string ActionName = "Others";
+        }
+        public static class Lab3_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "Lab3";
+            public const string Path = "/Lab3/DellDeskComp";
+            public const string ControllerName = "Lab3";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class Lab3_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "Lab3";
+            public const string Path = "/Lab3/Others";
+            public const string ControllerName = "Lab3";
+            public const string ActionName = "Lab3";
+        }
+        public static class Lab4_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "Lab4";
+            public const string Path = "/Lab4/DellDeskComp";
+            public const string ControllerName = "Lab4";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class Lab4_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "Lab4";
+            public const string Path = "/Lab4/Others";
+            public const string ControllerName = "Lab4";
+            public const string ActionName = "Others";
+        }
 
 
 

@@ -63,6 +63,20 @@ namespace coderush.Data
         public DbSet<coderush.Models.CP1_DellDeskComp> CP1_DellDeskComp { get; set; }
         public DbSet<coderush.Models.CP1_ThermoFisher80> CP1_ThermoFisher80 { get; set; }
 
+        public DbSet<coderush.Models.ILLUMINALibConst_Others> ILLUMINALibConst_Others { get; set; }
+
+        public DbSet<coderush.Models.ILLUMINASeqLab_NovaSeq6000> ILLUMINASeqLab_NovaSeq6000 { get; set; }
+        public DbSet<coderush.Models.ILLUMINASeqLab_Others> ILLUMINASeqLab_Others { get; set; }
+
+        public DbSet<coderush.Models.Lab1_DellDeskComp> Lab1_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.Lab1_Others> Lab1_Others { get; set; }
+        public DbSet<coderush.Models.Lab2_DellDeskComp> Lab2_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.Lab2_Others> Lab2_Others { get; set; }
+        public DbSet<coderush.Models.Lab3_DellDeskComp> Lab3_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.Lab3_Others> Lab3_Others { get; set; }
+        public DbSet<coderush.Models.Lab4_DellDeskComp> Lab4_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.Lab4_Others> Lab4_Others { get; set; }
+
 
 
 
