@@ -59,7 +59,10 @@ namespace coderush.Data
         public DbSet<coderush.Models.BSLSamMgmt_Refrigerator> BSLSamMgmt_Refrigerator { get; set; }
         public DbSet<coderush.Models.BSLSamMgmt_STPlusSeriesCentrifuge> BSLSamMgmt_STPlusSeriesCentrifuge { get; set; }
         public DbSet<coderush.Models.BSLSamMgmt_TheromoMixer> BSLSamMgmt_TheromoMixer { get; set; }
-       
+
+        public DbSet<coderush.Models.CP1_DellDeskComp> CP1_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.CP1_ThermoFisher80> CP1_ThermoFisher80 { get; set; }
+
 
 
 

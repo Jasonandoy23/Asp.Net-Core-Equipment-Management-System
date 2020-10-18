@@ -265,6 +265,22 @@ namespace coderush.Pages
             public const string ControllerName = "BSLSamMgmt";
             public const string ActionName = "TheromoMixer";
         }
+        public static class CP1_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "CP1";
+            public const string Path = "/CP1/DellDeskComp";
+            public const string ControllerName = "CP1";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class CP1_ThermoFisher80
+        {
+            public const string PageName = "ThermoFisher80";
+            public const string RoleName = "CP1";
+            public const string Path = "/CP1/ThermoFisher80";
+            public const string ControllerName = "CP1";
+            public const string ActionName = "ThermoFisher80";
+        }
 
 
 

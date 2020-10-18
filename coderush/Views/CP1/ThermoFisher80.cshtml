@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Dell Desktop Computers";
+    ViewData["Title"] = "Thermo Fisher - 80";
 }
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -46,7 +46,7 @@
         $(function () {
 
             var dataManager = ej.DataManager({
-                url: "/api/BSLDNAExt_DellDeskComp",
+                url: "/api/CP1_ThermoFisher80",
                 adaptor: new ej.WebApiAdaptor(),
                 offline: true
             });
@@ -56,9 +56,9 @@
                     dataSource: ej.DataManager({
                         json: e.result,
                         adaptor: new ej.remoteSaveAdaptor(),
-                        insertUrl: "/api/BSLDNAExt_DellDeskComp/Insert",
-                        updateUrl: "/api/BSLDNAExt_DellDeskComp/Update",
-                        removeUrl: "/api/BSLDNAExt_DellDeskComp/Remove",
+                        insertUrl: "/api/CP1_ThermoFisher80/Insert",
+                        updateUrl: "/api/CP1_ThermoFisher80/Update",
+                        removeUrl: "/api/CP1_ThermoFisher80/Remove",
                     }),
                     toolbarSettings: {
                         showToolbar: true,

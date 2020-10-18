@@ -46,7 +46,7 @@
         $(function () {
 
             var dataManager = ej.DataManager({
-                url: "/api/BSLDNAExt_DellDeskComp",
+                url: "/api/CP1_DellDeskComp",
                 adaptor: new ej.WebApiAdaptor(),
                 offline: true
             });
@@ -56,9 +56,9 @@
                     dataSource: ej.DataManager({
                         json: e.result,
                         adaptor: new ej.remoteSaveAdaptor(),
-                        insertUrl: "/api/BSLDNAExt_DellDeskComp/Insert",
-                        updateUrl: "/api/BSLDNAExt_DellDeskComp/Update",
-                        removeUrl: "/api/BSLDNAExt_DellDeskComp/Remove",
+                        insertUrl: "/api/CP1_DellDeskComp/Insert",
+                        updateUrl: "/api/CP1_DellDeskComp/Update",
+                        removeUrl: "/api/CP1_DellDeskComp/Remove",
                     }),
                     toolbarSettings: {
                         showToolbar: true,
