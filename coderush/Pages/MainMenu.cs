@@ -451,6 +451,102 @@ namespace coderush.Pages
             public const string ControllerName = "MGILibConstLab";
             public const string ActionName = "Vortexer";
         }
+        public static class MGISeqLab_Cabinet
+        {
+            public const string PageName = "Cabinet";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/Cabinet";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "Cabinet";
+        }
+        public static class MGISeqLab_Freezer
+        {
+            public const string PageName = "Freezer";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/Freezer";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "Freezer";
+        }
+        public static class MGISeqLab_G400
+        {
+            public const string PageName = "G400";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/G400";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "G400";
+        }
+        public static class MGISeqLab_PlateCentrifuge
+        {
+            public const string PageName = "Plate Centrifuge";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/PlateCentrifuge";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "PlateCentrifuge";
+        }
+        public static class MGISeqLab_PureWaterSystem
+        {
+            public const string PageName = "Pure Water System";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/PureWaterSystem";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "PureWaterSystem";
+        }
+        public static class MGISeqLab_Refrigerator
+        {
+            public const string PageName = "Refrigerator";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/Refrigerator";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "Refrigerator";
+        }
+        public static class MGISeqLab_T10BiochemicalPlatformPart
+        {
+            public const string PageName = "T10 Biochemical PlatformPart";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/T10BiochemicalPlatformPart";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "T10BiochemicalPlatformPart";
+        }
+        public static class MGISeqLab_T10Loader
+        {
+            public const string PageName = "T10 Loader";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/T10Loader";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "T10Loader";
+        }
+        public static class MGISeqLab_T10OpticalPlatformPart
+        {
+            public const string PageName = "T10 Optical PlatformPart";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/T10OpticalPlatformPart";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "T10OpticalPlatformPart";
+        }
+        public static class MGISeqLab_T7
+        {
+            public const string PageName = "T7";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/T7";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "T7";
+        }
+        public static class MGISeqLab_T7Loader
+        {
+            public const string PageName = "T7 Loader";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/T7Loader";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "T7Loader";
+        }
+        public static class MGISeqLab_Ztron
+        {
+            public const string PageName = "Ztron";
+            public const string RoleName = "MGI Sequencing Laboratory";
+            public const string Path = "/MGISeqLab/Ztron";
+            public const string ControllerName = "MGISeqLab";
+            public const string ActionName = "Ztron";
+        }
 
 
 

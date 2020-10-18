@@ -88,6 +88,19 @@ namespace coderush.Data
         public DbSet<coderush.Models.MGILibConstLab_ThermalCycler> MGILibConstLab_ThermalCycler { get; set; }
         public DbSet<coderush.Models.MGILibConstLab_Vortexer> MGILibConstLab_Vortexer { get; set; }
 
+        public DbSet<coderush.Models.MGISeqLab_Cabinet> MGISeqLab_Cabinet { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_Freezer> MGISeqLab_Freezer { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_G400> MGISeqLab_G400 { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_PlateCentrifuge> MGISeqLab_PlateCentrifuge { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_PureWaterSystem> MGISeqLab_PureWaterSystem { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_Refrigerator> MGISeqLab_Refrigerator { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_T10BiochemicalPlatformPart> MGISeqLab_T10BiochemicalPlatformPart { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_T10Loader> MGISeqLab_T10Loader { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_T10OpticalPlatformPart> MGISeqLab_T10OpticalPlatformPart { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_T7> MGISeqLab_T7 { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_T7Loader> MGISeqLab_T7Loader { get; set; }
+        public DbSet<coderush.Models.MGISeqLab_Ztron> MGISeqLab_Ztron { get; set; }
+
 
 
 

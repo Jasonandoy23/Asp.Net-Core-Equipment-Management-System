@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Centrifuge 5810R";
+    ViewData["Title"] = "T7 Loader";
 }
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -46,7 +46,7 @@
         $(function () {
 
             var dataManager = ej.DataManager({
-                url: "/api/MGILibConstLab_Centrifuge5810R",
+                url: "/api/MGISeqLab_T7Loader",
                 adaptor: new ej.WebApiAdaptor(),
                 offline: true
             });
@@ -56,9 +56,9 @@
                     dataSource: ej.DataManager({
                         json: e.result,
                         adaptor: new ej.remoteSaveAdaptor(),
-                        insertUrl: "/api/MGILibConstLab_Centrifuge5810R/Insert",
-                        updateUrl: "/api/MGILibConstLab_Centrifuge5810R/Update",
-                        removeUrl: "/api/MGILibConstLab_Centrifuge5810R/Remove",
+                        insertUrl: "/api/MGISeqLab_T7Loader/Insert",
+                        updateUrl: "/api/MGISeqLab_T7Loader/Update",
+                        removeUrl: "/api/MGISeqLab_T7Loader/Remove",
                     }),
                     toolbarSettings: {
                         showToolbar: true,
