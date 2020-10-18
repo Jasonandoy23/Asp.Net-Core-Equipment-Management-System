@@ -161,6 +161,111 @@ namespace coderush.Pages
         }
 
 
+        public static class BSLSamMgmt_BioSafetyCabinet
+        {
+            public const string PageName = "BioSafetyCabinet";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/BioSafetyCabinet";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "BioSafetyCabinet";
+        }
+        public static class BSLSamMgmt_BradyPrinteri5100
+        {
+            public const string PageName = "BradyPrinteri5100";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/BradyPrinteri5100";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "BradyPrinteri5100";
+        }
+        public static class BSLSamMgmt_CenceCentrifugeCL5R
+        {
+            public const string PageName = "CenceCentrifugeCL5R";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/CenceCentrifugeCL5R";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "CenceCentrifugeCL5R";
+        }
+        public static class BSLSamMgmt_Centrifuge
+        {
+            public const string PageName = "Centrifuge";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/Centrifuge";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "Centrifuge";
+        }
+        public static class BSLSamMgmt_Centrifuge5702
+        {
+            public const string PageName = "Centrifuge5702";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/Centrifuge5702";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "Centrifuge5702";
+        }
+        public static class BSLSamMgmt_DellDeskComp
+        {
+            public const string PageName = "DellDeskComp";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/DellDeskComp";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class BSLSamMgmt_ESCOClassIITypeA2
+        {
+            public const string PageName = "ESCOClassIITypeA2";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/ESCOClassIITypeA2";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "ESCOClassIITypeA2";
+        }
+        public static class BSLSamMgmt_LPVortexMixer
+        {
+            public const string PageName = "LPVortexMixer";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/LPVortexMixer";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "LPVortexMixer";
+        }
+        public static class BSLSamMgmt_MicroLabSTARlet
+        {
+            public const string PageName = "MicroLabSTARlet";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/MicroLabSTARlet";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "MicroLabSTARlet";
+        }
+        public static class BSLSamMgmt_MultitubeVortexer
+        {
+            public const string PageName = "MultitubeVortexer";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/MultitubeVortexer";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "MultitubeVortexer";
+        }
+        public static class BSLSamMgmt_Refrigerator
+        {
+            public const string PageName = "Refrigerator";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/Refrigerator";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "Refrigerator";
+        }
+        public static class BSLSamMgmt_STPlusSeriesCentrifuge
+        {
+            public const string PageName = "STPlusSeriesCentrifuge";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/STPlusSeriesCentrifuge";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "STPlusSeriesCentrifuge";
+        }
+        public static class BSLSamMgmt_TheromoMixer
+        {
+            public const string PageName = "TheromoMixer";
+            public const string RoleName = "BSLSamMgmt";
+            public const string Path = "/BSLSamMgmt/TheromoMixer";
+            public const string ControllerName = "BSLSamMgmt";
+            public const string ActionName = "TheromoMixer";
+        }
+
 
 
 

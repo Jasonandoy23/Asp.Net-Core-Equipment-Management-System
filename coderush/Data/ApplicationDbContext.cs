@@ -46,6 +46,21 @@ namespace coderush.Data
         public DbSet<coderush.Models.BSLDNAExt_QIAsymphonySP> BSLDNAExt_QIAsymphonySP { get; set; }
         public DbSet<coderush.Models.BSLDNAExt_Qubit4Fluorometer> BSLDNAExt_Qubit4Fluorometer { get; set; }
 
+        public DbSet<coderush.Models.BSLSamMgmt_BioSafetyCabinet> BSLSamMgmt_BioSafetyCabinet { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_BradyPrinteri5100> BSLSamMgmt_BradyPrinteri5100 { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_CenceCentrifugeCL5R> BSLSamMgmt_CenceCentrifugeCL5R { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_Centrifuge> BSLSamMgmt_Centrifuge { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_Centrifuge5702> BSLSamMgmt_Centrifuge5702 { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_DellDeskComp> BSLSamMgmt_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_ESCOClassIITypeA2> BSLSamMgmt_ESCOClassIITypeA2 { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_LPVortexMixer> BSLSamMgmt_LPVortexMixer { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_MicroLabSTARlet> BSLSamMgmt_MicroLabSTARlet { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_MultitubeVortexer> BSLSamMgmt_MultitubeVortexer { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_Refrigerator> BSLSamMgmt_Refrigerator { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_STPlusSeriesCentrifuge> BSLSamMgmt_STPlusSeriesCentrifuge { get; set; }
+        public DbSet<coderush.Models.BSLSamMgmt_TheromoMixer> BSLSamMgmt_TheromoMixer { get; set; }
+       
+
 
 
 

@@ -23,28 +23,33 @@
         <ul class="sidebar-menu" data-widget="tree">
 
             <li class="header">Auto Clave Rooms</li>
-            <li class="@Html.IsSelected(controller: MainMenu.ACR_PumpOnGround.ControllerName, action: MainMenu.ACR_PumpOnGround.ActionName)">
-                <a href="@MainMenu.ACR_PumpOnGround.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_PumpOnGround.PageName</span>
-                </a>
+            <li class="treeview">
+                <a href="#"> 
+                    <i class="fa fa-navicon"></i> <span>Multilevel</span></a>
+                <ul class="treeview-menu">
+                    <li class="@Html.IsSelected(controller: MainMenu.ACR_PumpOnGround.ControllerName, action: MainMenu.ACR_PumpOnGround.ActionName)">
+                        <a href="@MainMenu.ACR_PumpOnGround.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ACR_PumpOnGround.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.ACR_ShihlinCtrl.ControllerName, action: MainMenu.ACR_ShihlinCtrl.ActionName)">
+                        <a href="@MainMenu.ACR_ShihlinCtrl.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ACR_ShihlinCtrl.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.ACR_SteamSterilizerMSTV.ControllerName, action: MainMenu.ACR_SteamSterilizerMSTV.ActionName)">
+                        <a href="@MainMenu.ACR_SteamSterilizerMSTV.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ACR_SteamSterilizerMSTV.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.ACR_SteamSterilizerMSTV.ControllerName, action: MainMenu.ACR_SteamSterilizerMSTV.ActionName)">
+                        <a href="@MainMenu.ACR_SteamSterilizerMSTV.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ACR_SteamSterilizerMSTV.PageName</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
-            <li class="@Html.IsSelected(controller: MainMenu.ACR_ShihlinCtrl.ControllerName, action: MainMenu.ACR_ShihlinCtrl.ActionName)">
-                <a href="@MainMenu.ACR_ShihlinCtrl.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_ShihlinCtrl.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.ACR_SteamSterilizerMSTV.ControllerName, action: MainMenu.ACR_SteamSterilizerMSTV.ActionName)">
-                <a href="@MainMenu.ACR_SteamSterilizerMSTV.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_SteamSterilizerMSTV.PageName</span>
-                </a>
-            </li>
-
-            <li class="@Html.IsSelected(controller: MainMenu.ACR_SteamSterilizerMSTV.ControllerName, action: MainMenu.ACR_SteamSterilizerMSTV.ActionName)">
-                <a href="@MainMenu.ACR_SteamSterilizerMSTV.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_SteamSterilizerMSTV.PageName</span>
-                </a>
-            </li>
-
+            
             <li class="header">BSLDNAEXT</li>
             <li class="@Html.IsSelected(controller: MainMenu.BSLDNAExt_Centrifuge.ControllerName, action: MainMenu.BSLDNAExt_Centrifuge.ActionName)">
                 <a href="@MainMenu.BSLDNAExt_Centrifuge.Path">
@@ -126,6 +131,74 @@
                     <i class="fa fa-flask"></i> <span>@MainMenu.BSLDNAExt_Qubit4Fluorometer.PageName</span>
                 </a>
             </li>
+
+            <li class="header">BSLSAMMGMT</li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_BioSafetyCabinet.ControllerName, action: MainMenu.BSLSamMgmt_BioSafetyCabinet.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_BioSafetyCabinet.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_BioSafetyCabinet.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_BradyPrinteri5100.ControllerName, action: MainMenu.BSLSamMgmt_BradyPrinteri5100.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_BradyPrinteri5100.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_BradyPrinteri5100.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_CenceCentrifugeCL5R.ControllerName, action: MainMenu.BSLSamMgmt_CenceCentrifugeCL5R.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_CenceCentrifugeCL5R.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_CenceCentrifugeCL5R.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_Centrifuge.ControllerName, action: MainMenu.BSLSamMgmt_Centrifuge.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_Centrifuge.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_Centrifuge.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_Centrifuge5702.ControllerName, action: MainMenu.BSLSamMgmt_Centrifuge5702.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_Centrifuge5702.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_Centrifuge5702.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_DellDeskComp.ControllerName, action: MainMenu.BSLSamMgmt_DellDeskComp.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_DellDeskComp.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_DellDeskComp.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_ESCOClassIITypeA2.ControllerName, action: MainMenu.BSLSamMgmt_ESCOClassIITypeA2.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_ESCOClassIITypeA2.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_ESCOClassIITypeA2.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_LPVortexMixer.ControllerName, action: MainMenu.BSLSamMgmt_LPVortexMixer.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_LPVortexMixer.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_LPVortexMixer.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_MicroLabSTARlet.ControllerName, action: MainMenu.BSLSamMgmt_MicroLabSTARlet.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_MicroLabSTARlet.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_MicroLabSTARlet.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_MultitubeVortexer.ControllerName, action: MainMenu.BSLSamMgmt_MultitubeVortexer.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_MultitubeVortexer.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_MultitubeVortexer.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_Refrigerator.ControllerName, action: MainMenu.BSLSamMgmt_Refrigerator.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_Refrigerator.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_Refrigerator.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_STPlusSeriesCentrifuge.ControllerName, action: MainMenu.BSLSamMgmt_STPlusSeriesCentrifuge.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_STPlusSeriesCentrifuge.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_STPlusSeriesCentrifuge.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.BSLSamMgmt_TheromoMixer.ControllerName, action: MainMenu.BSLSamMgmt_TheromoMixer.ActionName)">
+                <a href="@MainMenu.BSLSamMgmt_TheromoMixer.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.BSLSamMgmt_TheromoMixer.PageName</span>
+                </a>
+            </li>
+
 
 
 

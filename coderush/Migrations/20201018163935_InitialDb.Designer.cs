@@ -10,8 +10,8 @@ using coderush.Data;
 namespace coderush.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201018152101_InitialDB")]
-    partial class InitialDB
+    [Migration("20201018163935_InitialDb")]
+    partial class InitialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -671,6 +671,318 @@ namespace coderush.Migrations
                     b.HasKey("LogId");
 
                     b.ToTable("BSLDNAExt_Qubit4Fluorometer");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_BioSafetyCabinet", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_BioSafetyCabinet");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_BradyPrinteri5100", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_BradyPrinteri5100");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_CenceCentrifugeCL5R", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_CenceCentrifugeCL5R");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_Centrifuge", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_Centrifuge");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_Centrifuge5702", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_Centrifuge5702");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_DellDeskComp", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_DellDeskComp");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_ESCOClassIITypeA2", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_ESCOClassIITypeA2");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_LPVortexMixer", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_LPVortexMixer");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_MicroLabSTARlet", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_MicroLabSTARlet");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_MultitubeVortexer", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_MultitubeVortexer");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_Refrigerator", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_Refrigerator");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_STPlusSeriesCentrifuge", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_STPlusSeriesCentrifuge");
+                });
+
+            modelBuilder.Entity("coderush.Models.BSLSamMgmt_TheromoMixer", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogTemperature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("BSLSamMgmt_TheromoMixer");
                 });
 
             modelBuilder.Entity("coderush.Models.Condition", b =>
