@@ -7,6 +7,33 @@ namespace coderush.Pages
 {
     public static class MainMenu
     {
+        public static class ACR_PumpOnGround
+        {
+            public const string PageName = "PUMP ( on ground )";
+            public const string RoleName = "AutoClaveRooms";
+            public const string Path = "/AutoClaveRooms/PumpOnGround";
+            public const string ControllerName = "AutoClaveRooms";
+            public const string ActionName = "PumpOnGround";
+        }
+        public static class ACR_ShihlinCtrl
+        {
+            public const string PageName = "ShihlinController";
+            public const string RoleName = "AutoClaveRooms";
+            public const string Path = "/AutoClaveRooms/ShihlinCtrl";
+            public const string ControllerName = "AutoClaveRooms";
+            public const string ActionName = "ShihlinCtrl";
+        }
+        public static class ACR_SteamSterilizerMSTV
+        {
+            public const string PageName = "SteamSterilizerMSTV";
+            public const string RoleName = "AutoClaveRooms";
+            public const string Path = "/AutoClaveRooms/SteamSterilizerMSTV";
+            public const string ControllerName = "AutoClaveRooms";
+            public const string ActionName = "SteamSterilizerMSTV";
+        }
+
+
+
 
         public static class Suppliers
         {
@@ -133,6 +160,12 @@ namespace coderush.Pages
             public const string ActionName = "ChangeRole";
         }
 
+        
+
+
+
+
+
         public static class Dashboard
         {
             public const string PageName = "Dashboard Main";
@@ -147,15 +180,6 @@ namespace coderush.Pages
             public const string RoleName = "Unit Of Measure";
             public const string Path = "/UnitOfMeasure/Index";
             public const string ControllerName = "UnitOfMeasure";
-            public const string ActionName = "Index";
-        }
-
-        public static class BSL_DNA_Extraction
-        {
-            public const string PageName = "Bio safety Laboratory (DNA Extraction)";
-            public const string RoleName = "BSL_DNA_Extraction";
-            public const string Path = "/BSL_DNA_Extraction/Index";
-            public const string ControllerName = "BSL_DNA_Extraction";
             public const string ActionName = "Index";
         }
 

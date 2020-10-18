@@ -23,6 +23,21 @@
         <ul class="sidebar-menu" data-widget="tree">
 
             <li class="header">INVENTORY</li>
+            <li class="@Html.IsSelected(controller: MainMenu.ACR_PumpOnGround.ControllerName)">
+                <a href="@MainMenu.ACR_PumpOnGround.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_PumpOnGround.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.ACR_ShihlinCtrl.ControllerName)">
+                <a href="@MainMenu.ACR_ShihlinCtrl.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_ShihlinCtrl.PageName</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: MainMenu.ACR_SteamSterilizerMSTV.ControllerName)">
+                <a href="@MainMenu.ACR_SteamSterilizerMSTV.Path">
+                    <i class="fa fa-flask"></i> <span>@MainMenu.ACR_SteamSterilizerMSTV.PageName</span>
+                </a>
+            </li>
             <li class="@Html.IsSelected(controller: MainMenu.ConsumablesAndLabware.ControllerName)">
                 <a href="@MainMenu.ConsumablesAndLabware.Path">
                     <i class="fa fa-flask"></i> <span>@MainMenu.ConsumablesAndLabware.PageName</span>

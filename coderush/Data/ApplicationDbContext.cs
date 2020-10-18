@@ -25,6 +25,13 @@ namespace coderush.Data
 
         public DbSet<coderush.Models.ApplicationUser> ApplicationUser { get; set; }
 
+        public DbSet<coderush.Models.ACR_PumpOnGround> ACR_PumpOnGround { get; set; }
+        public DbSet<coderush.Models.ACR_ShihlinCtrl> ACR_ShihlinCtrl { get; set; }        
+        public DbSet<coderush.Models.ACR_SteamSterilizerMSTV> ACR_SteamSterilizerMSTV { get; set; }
+
+
+
+
         public DbSet<coderush.Models.Condition> Condition { get; set; }
 
         public DbSet<coderush.Models.ConsumablesAndLabware> ConsumablesAndLabware { get; set; }
