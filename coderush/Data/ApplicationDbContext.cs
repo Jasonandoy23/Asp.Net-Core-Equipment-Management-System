@@ -77,6 +77,17 @@ namespace coderush.Data
         public DbSet<coderush.Models.Lab4_DellDeskComp> Lab4_DellDeskComp { get; set; }
         public DbSet<coderush.Models.Lab4_Others> Lab4_Others { get; set; }
 
+        public DbSet<coderush.Models.MGILibConstLab_TapeStation4200> MGILibConstLab_TapeStation4200 { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_Centrifuge5810R> MGILibConstLab_Centrifuge5810R { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_Fridge> MGILibConstLab_Fridge { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_HaierHYC6102c8c> MGILibConstLab_HaierHYC6102c8c { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_MGISP100> MGILibConstLab_MGISP100 { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_MGISP960> MGILibConstLab_MGISP960 { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_Others> MGILibConstLab_Others { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_PureWaterSystem> MGILibConstLab_PureWaterSystem { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_ThermalCycler> MGILibConstLab_ThermalCycler { get; set; }
+        public DbSet<coderush.Models.MGILibConstLab_Vortexer> MGILibConstLab_Vortexer { get; set; }
+
 
 
 

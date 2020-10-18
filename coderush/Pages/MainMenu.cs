@@ -370,6 +370,87 @@ namespace coderush.Pages
             public const string ControllerName = "Lab4";
             public const string ActionName = "Others";
         }
+        public static class MGILibConstLab_TapeStation4200
+        {
+            public const string PageName = "TapeStation4200";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/TapeStation4200";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "TapeStation4200";
+        }
+        public static class MGILibConstLab_Centrifuge5810R
+        {
+            public const string PageName = "Centrifuge5810R";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/Centrifuge5810R";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "Centrifuge5810R";
+        }
+        public static class MGILibConstLab_Fridge
+        {
+            public const string PageName = "Fridge";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/Fridge";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "Fridge";
+        }
+        public static class MGILibConstLab_HaierHYC6102c8c
+        {
+            public const string PageName = "HaierHYC6102c8c";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/HaierHYC6102c8c";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "HaierHYC6102c8c";
+        }
+        public static class MGILibConstLab_MGISP100
+        {
+            public const string PageName = "MGISP100";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/MGISP100";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "MGISP100";
+        }
+        public static class MGILibConstLab_MGISP960
+        {
+            public const string PageName = "MGISP960";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/MGISP960";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "MGISP960";
+        }
+        public static class MGILibConstLab_Others
+        {
+            public const string PageName = "Others";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/Others";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "Others";
+        }
+        
+        public static class MGILibConstLab_PureWaterSystem
+        {
+            public const string PageName = "PureWaterSystem";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/PureWaterSystem";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "PureWaterSystem";
+        }
+        public static class MGILibConstLab_ThermalCycler
+        {
+            public const string PageName = "ThermalCycler";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/ThermalCycler";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "ThermalCycler";
+        }
+        public static class MGILibConstLab_Vortexer
+        {
+            public const string PageName = "Vortexer";
+            public const string RoleName = "MGILibConstLab";
+            public const string Path = "/MGILibConstLab/Vortexer";
+            public const string ControllerName = "MGILibConstLab";
+            public const string ActionName = "Vortexer";
+        }
 
 
 
