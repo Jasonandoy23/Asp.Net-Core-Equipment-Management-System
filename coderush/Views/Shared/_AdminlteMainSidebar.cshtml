@@ -658,59 +658,34 @@
                 </ul>
             </li>
 
-            <li class="header">BSLSAMMGMT</li>
-            <li class="@Html.IsSelected(controller: MainMenu.ConsumablesAndLabware.ControllerName)">
-                <a href="@MainMenu.ConsumablesAndLabware.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.ConsumablesAndLabware.PageName</span>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-navicon"></i> <span>Robotics Lab</span>
                 </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.KitsAndReagents.ControllerName)">
-                <a href="@MainMenu.KitsAndReagents.Path">
-                    <i class="fa fa-flask"></i> <span>@MainMenu.KitsAndReagents.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Instruments.ControllerName)">
-                <a href="@MainMenu.Instruments.Path">
-                    <i class="fa fa-cube"></i> <span>@MainMenu.Instruments.PageName</span>
-                </a>
+                <ul class="treeview-menu">
+                    <li class="@Html.IsSelected(controller: MainMenu.RoboticsLab_DellDeskComp.ControllerName, action: MainMenu.RoboticsLab_DellDeskComp.ActionName)">
+                        <a href="@MainMenu.RoboticsLab_DellDeskComp.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.RoboticsLab_DellDeskComp.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.RoboticsLab_MicroLabNIMBUS.ControllerName, action: MainMenu.RoboticsLab_MicroLabNIMBUS.ActionName)">
+                        <a href="@MainMenu.RoboticsLab_MicroLabNIMBUS.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.RoboticsLab_MicroLabNIMBUS.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.RoboticsLab_MicroLabSTAR.ControllerName, action: MainMenu.RoboticsLab_MicroLabSTAR.ActionName)">
+                        <a href="@MainMenu.RoboticsLab_MicroLabSTAR.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.RoboticsLab_MicroLabSTAR.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.RoboticsLab_Others.ControllerName, action: MainMenu.RoboticsLab_Others.ActionName)">
+                        <a href="@MainMenu.RoboticsLab_Others.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.RoboticsLab_Others.PageName</span>
+                        </a>
+                    </li>                 
+                </ul>
             </li>
 
-            <li class="header">CONFIG</li>
-            <li class="@Html.IsSelected(controller: MainMenu.Location.ControllerName)">
-                <a href="@MainMenu.Location.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Location.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Status.ControllerName)">
-                <a href="@MainMenu.Status.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Status.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Storage.ControllerName)">
-                <a href="@MainMenu.Storage.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Storage.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Condition.ControllerName)">
-                <a href="@MainMenu.Condition.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Condition.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Suppliers.ControllerName)">
-                <a href="@MainMenu.Suppliers.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Suppliers.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.Sections.ControllerName)">
-                <a href="@MainMenu.Sections.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.Sections.PageName</span>
-                </a>
-            </li>
-            <li class="@Html.IsSelected(controller: MainMenu.UnitOfMeasure.ControllerName)">
-                <a href="@MainMenu.UnitOfMeasure.Path">
-                    <i class="fa fa-gear"></i> <span>@MainMenu.UnitOfMeasure.PageName</span>
-                </a>
-            </li>
             <li class="header">USER & ROLE</li>
             <li class="@Html.IsSelected(controller: MainMenu.User.ControllerName, action: MainMenu.User.ActionName)">
                 <a href="@MainMenu.User.Path">

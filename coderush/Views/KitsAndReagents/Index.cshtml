@@ -114,7 +114,7 @@
                         { field: "KR_description", headerText: 'Description' },
                         { field: "KR_qtyOnhand", headerText: 'Qty On-Hand', editType: "numericedit", validationRules: { required: true } },
                         { field: "UnitOfMeasure_id", headerText: 'UOM', foreignKeyField: "UnitOfMeasure_id", foreignKeyValue: "UnitOfMeasure_name", dataSource: dataManagerUnitOfMeasure, validationRules: { required: true } },
-                        { field: "KR_expiryDate", headerText: 'Expiry Date', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
+                        { field: "KR_expiryDate", headerText: 'Expiry Date', editType: "datetimepicker", format: "{0:MM/dd/yyyy HH:mm tt}", validationRules: { required: true } },
                         { field: "KR_averageCost", headerText: 'Ave Cost', editType: "numericedit", format: "{0:n}", validationRules: { required: true } },
                         { field: "KR_assetValue", headerText: 'Asset Value', editType: "numericedit", format: "{0:n}", validationRules: { required: true } },                                              
                     ],

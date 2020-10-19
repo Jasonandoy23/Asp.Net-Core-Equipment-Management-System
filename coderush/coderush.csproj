@@ -28,6 +28,22 @@
     <Compile Remove="Migrations\20201018131427_InitialDB2.Designer.cs" />
     <Compile Remove="Migrations\20201018152101_InitialDB.cs" />
     <Compile Remove="Migrations\20201018152101_InitialDB.Designer.cs" />
+    <Compile Remove="Migrations\20201018163935_InitialDb.cs" />
+    <Compile Remove="Migrations\20201018163935_InitialDb.Designer.cs" />
+    <Compile Remove="Migrations\20201018175521_InitialDB1.cs" />
+    <Compile Remove="Migrations\20201018175521_InitialDB1.Designer.cs" />
+    <Compile Remove="Migrations\20201018185204_InitialDb2.cs" />
+    <Compile Remove="Migrations\20201018185204_InitialDb2.Designer.cs" />
+    <Compile Remove="Migrations\20201018204434_InitialDb3.cs" />
+    <Compile Remove="Migrations\20201018204434_InitialDb3.Designer.cs" />
+    <Compile Remove="Migrations\20201018221023_InitialDb4.cs" />
+    <Compile Remove="Migrations\20201018221023_InitialDb4.Designer.cs" />
+    <Compile Remove="Migrations\20201019143613_InitialDB5.cs" />
+    <Compile Remove="Migrations\20201019143613_InitialDB5.Designer.cs" />
+    <Compile Remove="Migrations\20201019153201_InitialDB6.cs" />
+    <Compile Remove="Migrations\20201019153201_InitialDB6.Designer.cs" />
+    <Compile Remove="Migrations\20201019175716_InitialDB7.cs" />
+    <Compile Remove="Migrations\20201019175716_InitialDB7.Designer.cs" />
   </ItemGroup>
 
 

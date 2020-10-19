@@ -838,96 +838,37 @@ namespace coderush.Pages
             public const string ControllerName = "RDLab";
             public const string ActionName = "ThermoScientificMyspin12";
         }
-
-
-
-        public static class Suppliers
+        public static class RoboticsLab_DellDeskComp
         {
-            public const string PageName = "Suppliers";
-            public const string RoleName = "Suppliers";
-            public const string Path = "/Suppliers/Index";
-            public const string ControllerName = "Suppliers";
-            public const string ActionName = "Index";
+            public const string PageName = "Dell Desktop Computers";
+            public const string RoleName = "Robotics Laboratory";
+            public const string Path = "/RoboticsLab/DellDeskComp";
+            public const string ControllerName = "RoboticsLab";
+            public const string ActionName = "DellDeskComp";
         }
-
-        public static class ConsumablesAndLabware
+        public static class RoboticsLab_MicroLabNIMBUS
         {
-            public const string PageName = "ConsumablesAndLabware";
-            public const string RoleName = "ConsumablesAndLabware";
-            public const string Path = "/ConsumablesAndLabware/Index";
-            public const string ControllerName = "ConsumablesAndLabware";
-            public const string ActionName = "Index";
+            public const string PageName = "MicroLab NIMBUS";
+            public const string RoleName = "Robotics Laboratory";
+            public const string Path = "/RoboticsLab/MicroLabNIMBUS";
+            public const string ControllerName = "RoboticsLab";
+            public const string ActionName = "MicroLabNIMBUS";
         }
-
-        public static class KitsAndReagents
+        public static class RoboticsLab_MicroLabSTAR
         {
-            public const string PageName = "KitsAndReagents";
-            public const string RoleName = "KitsAndReagents";
-            public const string Path = "/KitsAndReagents/Index";
-            public const string ControllerName = "KitsAndReagents";
-            public const string ActionName = "Index";
+            public const string PageName = "MicroLab STAR";
+            public const string RoleName = "Robotics Laboratory";
+            public const string Path = "/RoboticsLab/MicroLabSTAR";
+            public const string ControllerName = "RoboticsLab";
+            public const string ActionName = "MicroLabSTAR";
         }
-        public static class Instruments
+        public static class RoboticsLab_Others
         {
-            public const string PageName = "Instruments";
-            public const string RoleName = "Instruments";
-            public const string Path = "/Instruments/Index";
-            public const string ControllerName = "Instruments";
-            public const string ActionName = "Index";
-        }
-
-        public static class Condition
-        {
-            public const string PageName = "Condition";
-            public const string RoleName = "Condition";
-            public const string Path = "/Condition/Index";
-            public const string ControllerName = "Condition";
-            public const string ActionName = "Index";
-        }
- 
-        public static class Currency
-        {
-            public const string PageName = "Currency";
-            public const string RoleName = "Currency";
-            public const string Path = "/Currency/Index";
-            public const string ControllerName = "Currency";
-            public const string ActionName = "Index";
-        }
-
-        public static class Location
-        {
-            public const string PageName = "Location";
-            public const string RoleName = "Location";
-            public const string Path = "/Location/Index";
-            public const string ControllerName = "Location";
-            public const string ActionName = "Index";
-        }
-        
-        public static class Status
-        {
-            public const string PageName = "Status";
-            public const string RoleName = "Status";
-            public const string Path = "/Status/Index";
-            public const string ControllerName = "Status";
-            public const string ActionName = "Index";
-        }
-
-        public static class Storage
-        {
-            public const string PageName = "Storage";
-            public const string RoleName = "Storage";
-            public const string Path = "/Storage/Index";
-            public const string ControllerName = "Storage";
-            public const string ActionName = "Index";
-        }      
-
-        public static class Sections
-        {
-            public const string PageName = "Sections";
-            public const string RoleName = "Sections";
-            public const string Path = "/Sections/Index";
-            public const string ControllerName = "Sections";
-            public const string ActionName = "Index";
+            public const string PageName = "Others";
+            public const string RoleName = "Robotics Laboratory";
+            public const string Path = "/RoboticsLab/Others";
+            public const string ControllerName = "RoboticsLab";
+            public const string ActionName = "Others";
         }
 
         public static class User
@@ -966,12 +907,6 @@ namespace coderush.Pages
             public const string ActionName = "ChangeRole";
         }
 
-        
-
-
-
-
-
         public static class Dashboard
         {
             public const string PageName = "Dashboard Main";
@@ -980,14 +915,5 @@ namespace coderush.Pages
             public const string ControllerName = "Dashboard";
             public const string ActionName = "Index";
         }
-        public static class UnitOfMeasure
-        {
-            public const string PageName = "Unit Of Measure";
-            public const string RoleName = "Unit Of Measure";
-            public const string Path = "/UnitOfMeasure/Index";
-            public const string ControllerName = "UnitOfMeasure";
-            public const string ActionName = "Index";
-        }
-
     }
 }

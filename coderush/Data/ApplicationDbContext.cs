@@ -139,37 +139,11 @@ namespace coderush.Data
         public DbSet<coderush.Models.RDLab_ThermalCycler> RDLab_ThermalCycler { get; set; }
         public DbSet<coderush.Models.RDLab_ThermoScientificMyspin6> RDLab_ThermoScientificMyspin6 { get; set; }
         public DbSet<coderush.Models.RDLab_ThermoScientificMyspin12> RDLab_ThermoScientificMyspin12 { get; set; }
-       
 
-
-
-
-
-
-
-
-
-        public DbSet<coderush.Models.Condition> Condition { get; set; }
-
-        public DbSet<coderush.Models.ConsumablesAndLabware> ConsumablesAndLabware { get; set; }
-
-        public DbSet<coderush.Models.Currency> Currency { get; set; }
-
-        public DbSet<coderush.Models.Instruments> Instruments { get; set; }
-
-        public DbSet<coderush.Models.KitsAndReagents> KitsAndReagents { get; set; }
-
-        public DbSet<coderush.Models.Location> Location { get; set; }
-
-        public DbSet<coderush.Models.Status> Status { get; set; }
-
-        public DbSet<coderush.Models.Sections> Sections { get; set; }
-
-        public DbSet<coderush.Models.Storage> Storage { get; set; }
-
-        public DbSet<coderush.Models.Suppliers> Suppliers { get; set; }
-
-        public DbSet<coderush.Models.UnitOfMeasure> UnitOfMeasure { get; set; }
+        public DbSet<coderush.Models.RoboticsLab_DellDeskComp> RoboticsLab_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.RoboticsLab_MicroLabNIMBUS> RoboticsLab_MicroLabNIMBUS { get; set; }
+        public DbSet<coderush.Models.RoboticsLab_MicroLabSTAR> RoboticsLab_MicroLabSTAR { get; set; }
+        public DbSet<coderush.Models.RoboticsLab_Others> RoboticsLab_Others { get; set; }
 
         public DbSet<coderush.Models.UserProfile> UserProfile { get; set; }
 

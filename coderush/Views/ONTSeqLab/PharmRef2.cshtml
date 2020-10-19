@@ -84,9 +84,9 @@
                     allowPaging: true,
                     pageSettings: { pageSize: 10, printMode: ej.Grid.PrintMode.CurrentPage },
                     columns: [
-                        { field: "LogId", headerText: 'SN', isPrimaryKey: true, isIdentity: true },
-                        { field: "LogDate", headerText: 'Log Date', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
-                        { field: "LogTemperature", headerText: 'Temperature' },
+                        { field: "LogId", width: 80, headerText: 'SN', isPrimaryKey: true, isIdentity: true },
+                        { field: "LogDate", width: 150, headerText: 'Log Date', editType: "datetimepicker", format: "{0:MM/dd/yyyy HH:mm tt}", validationRules: { required: true } },
+                        { field: "LogTemperature", width: 150, headerText: 'Temperature' },
                         { field: "LogRemarks", headerText: 'Remarks' },
                     ],
                     actionComplete: "complete",

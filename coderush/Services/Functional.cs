@@ -41,81 +41,18 @@ namespace coderush.Services
         }
 
       
-
         public async Task InitAppData()
         {
             try
             {
                           
-                await _context.Currency.AddAsync(new Currency { CurrencyName = "Default", CurrencyCode = "USD" });
-                await _context.SaveChangesAsync();
-
-                await _context.Location.AddAsync(new Location { Location_name = "OMICS_LAB_1" });
-                await _context.SaveChangesAsync();
-
-                List<Storage> storageNames = new List<Storage>() {
-                    new Storage{Storage_name = "-20FREEZER1"},
-                    new Storage{Storage_name = "-20FREEZER2"},
-                    new Storage{Storage_name = "4FRIDGE"},
-                    new Storage{Storage_name = "CABINET_1"},
-                    new Storage{Storage_name = "CABINET_2"}
-                };
-                await _context.Storage.AddRangeAsync(storageNames);
-                await _context.SaveChangesAsync();
-               
-                List<Condition> condition = new List<Condition>() {
-                    new Condition{Condition_name = "New"},
-                    new Condition{Condition_name = "Opened"},
-                    new Condition{Condition_name = "Used"}          
-                };
-                await _context.Condition.AddRangeAsync(condition);
-                await _context.SaveChangesAsync();
-
-                List<Suppliers> suppliers = new List<Suppliers>() {
-                    new Suppliers{Suppliers_name = "Oxford Nanopore"},
-                    new Suppliers{Suppliers_name = "Hamilton"},
-                    new Suppliers{Suppliers_name = "Thermofisher"},
-                    new Suppliers{Suppliers_name = "Eppendorf"}
-                };
-                await _context.Suppliers.AddRangeAsync(suppliers);
-                await _context.SaveChangesAsync();
-
-                List<Sections> sections = new List<Sections>() {
-                    new Sections{Sections_name = "MGI"},
-                    new Sections{Sections_name = "OMICS"},
-                    new Sections{Sections_name = "ONT"}
-                };
-                await _context.Sections.AddRangeAsync(sections);
-                await _context.SaveChangesAsync();
-
-                List<Status> status = new List<Status>() {
-                    new Status{Status_name = "Withdrawn"},
-                    new Status{Status_name = "Stored"},
-                };
-                await _context.Status.AddRangeAsync(status);
-                await _context.SaveChangesAsync();
-
-                List<UnitOfMeasure> unitOfMeasure = new List<UnitOfMeasure>() {
-                    new UnitOfMeasure{UnitOfMeasure_name = "Bags"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Box"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Pack"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Rack"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Pcs"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Plates"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Tips"},
-                    new UnitOfMeasure{UnitOfMeasure_name = "Tubes"},
-                };
-                await _context.UnitOfMeasure.AddRangeAsync(unitOfMeasure);                
-                await _context.SaveChangesAsync();
-
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
-
+        
         public async Task SendEmailBySendGridAsync(string apiKey, 
             string fromEmail, 
             string fromFullName, 
