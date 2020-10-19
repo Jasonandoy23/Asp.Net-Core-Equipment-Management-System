@@ -101,6 +101,9 @@ namespace coderush.Data
         public DbSet<coderush.Models.MGISeqLab_T7Loader> MGISeqLab_T7Loader { get; set; }
         public DbSet<coderush.Models.MGISeqLab_Ztron> MGISeqLab_Ztron { get; set; }
 
+        public DbSet<coderush.Models.ONTLibConstLab_MicroLabNGSSTAR> ONTLibConstLab_MicroLabNGSSTAR { get; set; }
+        public DbSet<coderush.Models.ONTLibConstLab_DellDeskComp> ONTLibConstLab_DellDeskComp { get; set; }
+
 
 
 

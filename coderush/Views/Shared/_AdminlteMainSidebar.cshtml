@@ -454,6 +454,24 @@
                 </ul>
             </li>
 
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-navicon"></i> <span>ONT Library Construction Lab</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="@Html.IsSelected(controller: MainMenu.ONTLibConstLab_MicroLabNGSSTAR.ControllerName, action: MainMenu.ONTLibConstLab_MicroLabNGSSTAR.ActionName)">
+                        <a href="@MainMenu.ONTLibConstLab_MicroLabNGSSTAR.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ONTLibConstLab_MicroLabNGSSTAR.PageName</span>
+                        </a>
+                    </li>
+                    <li class="@Html.IsSelected(controller: MainMenu.ONTLibConstLab_DellDeskComp.ControllerName, action: MainMenu.ONTLibConstLab_DellDeskComp.ActionName)">
+                        <a href="@MainMenu.ONTLibConstLab_DellDeskComp.Path">
+                            <i class="fa fa-cube"></i> <span>@MainMenu.ONTLibConstLab_DellDeskComp.PageName</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="header">BSLSAMMGMT</li>
             <li class="@Html.IsSelected(controller: MainMenu.ConsumablesAndLabware.ControllerName)">
                 <a href="@MainMenu.ConsumablesAndLabware.Path">

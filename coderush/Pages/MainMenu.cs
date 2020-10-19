@@ -548,6 +548,24 @@ namespace coderush.Pages
             public const string ActionName = "Ztron";
         }
 
+        public static class ONTLibConstLab_MicroLabNGSSTAR
+        {
+            public const string PageName = "MicroLab NGSStar";
+            public const string RoleName = "ONT Library Construction Laboratory";
+            public const string Path = "/ONTLibConstLab/MicroLabNGSSTAR";
+            public const string ControllerName = "ONTLibConstLab";
+            public const string ActionName = "MicroLabNGSSTAR";
+        }
+        public static class ONTLibConstLab_DellDeskComp
+        {
+            public const string PageName = "Dell Desktop Compomputers";
+            public const string RoleName = "ONT Library Construction Laboratory";
+            public const string Path = "/ONTLibConstLab/DellDeskComp";
+            public const string ControllerName = "ONTLibConstLab";
+            public const string ActionName = "DellDeskComp";
+        }
+
+
 
 
 
