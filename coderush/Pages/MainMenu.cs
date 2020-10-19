@@ -564,6 +564,91 @@ namespace coderush.Pages
             public const string ControllerName = "ONTLibConstLab";
             public const string ActionName = "DellDeskComp";
         }
+        public static class ONTSeqLab_Centrifuge5424
+        {
+            public const string PageName = "Centrifuge 5424";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/Centrifuge5424";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "Centrifuge5424";
+        }
+        public static class ONTSeqLab_Centrifuge5810R
+        {
+            public const string PageName = "Centrifuge 5810R";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/Centrifuge5810R";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "Centrifuge5810R";
+        }
+        public static class ONTSeqLab_DellDeskComp
+        {
+            public const string PageName = "Dell Desktop Computers";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/DellDeskComp";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class ONTSeqLab_HPLaserMFP137fnw
+        {
+            public const string PageName = "HP Laser MFP137fnw";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/HPLaserMFP137fnw";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "HPLaserMFP137fnw";
+        }
+        public static class ONTSeqLab_IndDehumidifierClimatePlus
+        {
+            public const string PageName = "Industrial Dehumidifier ClimatePlus";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/IndDehumidifierClimatePlus";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "IndDehumidifierClimatePlus";
+        }
+        public static class ONTSeqLab_PharmRef1
+        {
+            public const string PageName = "Pharmaceutical Refrigerator 1";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/PharmRef1";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "PharmRef1";
+        }
+        public static class ONTSeqLab_PharmRef2
+        {
+            public const string PageName = "Pharmaceutical Refrigerator 2";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/PharmRef2";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "PharmRef2";
+        }
+        public static class ONTSeqLab_PromethIONDataAcqTower
+        {
+            public const string PageName = "PromethION DataAcquisition Tower";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/PromethIONDataAcqTower";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "PromethIONDataAcqTower";
+        }
+        public static class ONTSeqLab_PromethIONSeqUnit
+        {
+            public const string PageName = "PromethION Sequencing Unit";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/PromethIONSeqUnit";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "PromethIONSeqUnit";
+        }
+        
+        public static class ONTSeqLab_ThermofisherSciFridge
+        {
+            public const string PageName = "Thermofisher Scientific Fridge";
+            public const string RoleName = "ONT Sequencing Laboratory";
+            public const string Path = "/ONTSeqLab/ThermofisherSciFridge";
+            public const string ControllerName = "ONTSeqLab";
+            public const string ActionName = "ThermofisherSciFridge";
+        }
+        
+        
+        
+        
 
 
 

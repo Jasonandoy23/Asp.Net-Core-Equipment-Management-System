@@ -104,6 +104,21 @@ namespace coderush.Data
         public DbSet<coderush.Models.ONTLibConstLab_MicroLabNGSSTAR> ONTLibConstLab_MicroLabNGSSTAR { get; set; }
         public DbSet<coderush.Models.ONTLibConstLab_DellDeskComp> ONTLibConstLab_DellDeskComp { get; set; }
 
+        public DbSet<coderush.Models.ONTSeqLab_Centrifuge5424> ONTSeqLab_Centrifuge5424 { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_Centrifuge5810R> ONTSeqLab_Centrifuge5810R { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_DellDeskComp> ONTSeqLab_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_HPLaserMFP137fnw> ONTSeqLab_HPLaserMFP137fnw { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_IndDehumidifierClimatePlus> ONTSeqLab_IndDehumidifierClimatePlus { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_PharmRef1> ONTSeqLab_PharmRef1 { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_PharmRef2> ONTSeqLab_PharmRef2 { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_PromethIONDataAcqTower> ONTSeqLab_PromethIONDataAcqTower { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_PromethIONSeqUnit> ONTSeqLab_PromethIONSeqUnit { get; set; }
+        public DbSet<coderush.Models.ONTSeqLab_ThermofisherSciFridge> ONTSeqLab_ThermofisherSciFridge { get; set; }
+        
+        
+        
+        
+
 
 
 
