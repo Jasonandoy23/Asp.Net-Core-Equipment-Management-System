@@ -114,10 +114,35 @@ namespace coderush.Data
         public DbSet<coderush.Models.ONTSeqLab_PromethIONDataAcqTower> ONTSeqLab_PromethIONDataAcqTower { get; set; }
         public DbSet<coderush.Models.ONTSeqLab_PromethIONSeqUnit> ONTSeqLab_PromethIONSeqUnit { get; set; }
         public DbSet<coderush.Models.ONTSeqLab_ThermofisherSciFridge> ONTSeqLab_ThermofisherSciFridge { get; set; }
-        
-        
-        
-        
+
+        public DbSet<coderush.Models.RDLab_BioSafetyCabinet> RDLab_BioSafetyCabinet { get; set; }
+        public DbSet<coderush.Models.RDLab_Centrifuge5424R> RDLab_Centrifuge5424R { get; set; }
+        public DbSet<coderush.Models.RDLab_CompactDrybathS> RDLab_CompactDrybathS { get; set; }
+        public DbSet<coderush.Models.RDLab_DellDeskComp> RDLab_DellDeskComp { get; set; }
+        public DbSet<coderush.Models.RDLab_ESCOClassIITypeA2BioSafetyCabinet> RDLab_ESCOClassIITypeA2BioSafetyCabinet { get; set; }
+        public DbSet<coderush.Models.RDLab_FastPrep966010500> RDLab_FastPrep966010500 { get; set; }
+        public DbSet<coderush.Models.RDLab_GelDocE7Imager> RDLab_GelDocE7Imager { get; set; }
+        public DbSet<coderush.Models.RDLab_HaierDW40L508DeepFreezer40c20c> RDLab_HaierDW40L508DeepFreezer40c20c { get; set; }
+        public DbSet<coderush.Models.RDLab_HaierHYC6102c8c> RDLab_HaierHYC6102c8c { get; set; }
+        public DbSet<coderush.Models.RDLab_HeatStri> RDLab_HeatStri { get; set; }
+        public DbSet<coderush.Models.RDLab_HulaMixer> RDLab_HulaMixer { get; set; }
+        public DbSet<coderush.Models.RDLab_LPVortexMixer> RDLab_LPVortexMixer { get; set; }
+        public DbSet<coderush.Models.RDLab_MasterCycler> RDLab_MasterCycler { get; set; }
+        public DbSet<coderush.Models.RDLab_MettlerToledoNEWClassicMF> RDLab_MettlerToledoNEWClassicMF { get; set; }
+        public DbSet<coderush.Models.RDLab_MicrowaveOven> RDLab_MicrowaveOven { get; set; }
+        public DbSet<coderush.Models.RDLab_MiniSpin> RDLab_MiniSpin { get; set; }
+        public DbSet<coderush.Models.RDLab_NanodropOne> RDLab_NanodropOne { get; set; }
+        public DbSet<coderush.Models.RDLab_PowerPacBasic> RDLab_PowerPacBasic { get; set; }
+        public DbSet<coderush.Models.RDLab_PrecisionGP10WaterBath> RDLab_PrecisionGP10WaterBath { get; set; }
+        public DbSet<coderush.Models.RDLab_Qubit4Fluorometer> RDLab_Qubit4Fluorometer { get; set; }
+        public DbSet<coderush.Models.RDLab_SWP01> RDLab_SWP01 { get; set; }
+        public DbSet<coderush.Models.RDLab_ThermalCycler> RDLab_ThermalCycler { get; set; }
+        public DbSet<coderush.Models.RDLab_ThermoScientificMyspin6> RDLab_ThermoScientificMyspin6 { get; set; }
+        public DbSet<coderush.Models.RDLab_ThermoScientificMyspin12> RDLab_ThermoScientificMyspin12 { get; set; }
+       
+
+
+
 
 
 

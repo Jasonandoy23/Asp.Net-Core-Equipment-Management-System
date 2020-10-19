@@ -645,13 +645,199 @@ namespace coderush.Pages
             public const string ControllerName = "ONTSeqLab";
             public const string ActionName = "ThermofisherSciFridge";
         }
-        
-        
-        
-        
 
-
-
+        public static class RDLab_BioSafetyCabinet
+        {
+            public const string PageName = "Bio Safety Cabinet";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/BioSafetyCabinet";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "BioSafetyCabinet";
+        }
+        public static class RDLab_Centrifuge5424R
+        {
+            public const string PageName = "Centrifuge 5424 R";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/Centrifuge5424R";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "Centrifuge5424R";
+        }
+        public static class RDLab_CompactDrybathS
+        {
+            public const string PageName = "Compact Drybath S";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/CompactDrybathS";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "CompactDrybathS";
+        }
+        public static class RDLab_DellDeskComp
+        {
+            public const string PageName = "Dell Desktop Computers";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/DellDeskComp";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "DellDeskComp";
+        }
+        public static class RDLab_ESCOClassIITypeA2BioSafetyCabinet
+        {
+            public const string PageName = "ESCO Class II Type A2 (Bio Safety Cabinet)";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/ESCOClassIITypeA2BioSafetyCabinet";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "ESCOClassIITypeA2BioSafetyCabinet";
+        }
+        public static class RDLab_FastPrep966010500
+        {
+            public const string PageName = "Fast Prep 96 / 6010500";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/FastPrep966010500";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "FastPrep966010500";
+        }
+        public static class RDLab_GelDocE7Imager
+        {
+            public const string PageName = "Gel Doc E7 Imager";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/GelDocE7Imager";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "GelDocE7Imager";
+        }
+        public static class RDLab_HaierDW40L508DeepFreezer40c20c
+        {
+            public const string PageName = "Haier DW-40L508 Deep Freezer -40c -- -20c";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/HaierDW40L508DeepFreezer40c20c";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "HaierDW40L508DeepFreezer40c20c";
+        }
+        public static class RDLab_HaierHYC6102c8c
+        {
+            public const string PageName = "Haier HYC-610 2c -- 8c";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/HaierHYC6102c8c";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "HaierHYC6102c8c";
+        }
+        public static class RDLab_HeatStri
+        {
+            public const string PageName = "Heat Stri";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/HeatStri";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "HeatStri";
+        }
+        public static class RDLab_HulaMixer
+        {
+            public const string PageName = "Hula Mixer";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/HulaMixer";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "HulaMixer";
+        }
+        public static class RDLab_LPVortexMixer
+        {
+            public const string PageName = "LP Vortex Mixer";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/LPVortexMixer";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "LPVortexMixer";
+        }
+        public static class RDLab_MasterCycler
+        {
+            public const string PageName = "Master Cycler";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/MasterCycler";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "MasterCycler";
+        }
+        public static class RDLab_MettlerToledoNEWClassicMF
+        {
+            public const string PageName = "Mettler Toledo NEW ClassicMF";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/MettlerToledoNEWClassicMF";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "MettlerToledoNEWClassicMF";
+        }
+        public static class RDLab_MicrowaveOven
+        {
+            public const string PageName = "Microwave Oven";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/MicrowaveOven";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "MicrowaveOven";
+        }
+        public static class RDLab_MiniSpin
+        {
+            public const string PageName = "MiniSpin";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/MiniSpin";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "MiniSpin";
+        }
+        public static class RDLab_NanodropOne
+        {
+            public const string PageName = "NanoDrop One";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/NanodropOne";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "NanodropOne";
+        }
+        public static class RDLab_PowerPacBasic
+        {
+            public const string PageName = "PowerPac Basic";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/PowerPacBasic";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "PowerPacBasic";
+        }
+        public static class RDLab_PrecisionGP10WaterBath
+        {
+            public const string PageName = "Precision GP10 Water Bath";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/PrecisionGP10WaterBath";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "PrecisionGP10WaterBath";
+        }
+        public static class RDLab_Qubit4Fluorometer
+        {
+            public const string PageName = "Qubit4 Fluorometer";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/Qubit4Fluorometer";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "Qubit4Fluorometer";
+        }
+        public static class RDLab_SWP01
+        {
+            public const string PageName = "SWP01";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/SWP01";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "SWP01";
+        }
+        public static class RDLab_ThermalCycler
+        {
+            public const string PageName = "ThermalCycler";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/ThermalCycler";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "ThermalCycler";
+        }
+        public static class RDLab_ThermoScientificMyspin6
+        {
+            public const string PageName = "ThermoScientific Myspin6";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/ThermoScientificMyspin6";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "ThermoScientificMyspin6";
+        }
+        public static class RDLab_ThermoScientificMyspin12
+        {
+            public const string PageName = "ThermoScientific Myspin12";
+            public const string RoleName = "R&D Laboratory";
+            public const string Path = "/RDLab/ThermoScientificMyspin12";
+            public const string ControllerName = "RDLab";
+            public const string ActionName = "ThermoScientificMyspin12";
+        }
 
 
 
