@@ -24,6 +24,82 @@ namespace EquipmentManagement.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ACR_PumpOnGround_FileOnDatabasePM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_PumpOnGround_FileOnDatabasePM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_PumpOnGround_FileOnDatabaseSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_PumpOnGround_FileOnDatabaseSR", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_PumpOnGround_FileOnFileSystemPM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_PumpOnGround_FileOnFileSystemPM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_PumpOnGround_FileOnFileSystemSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_PumpOnGround_FileOnFileSystemSR", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ACR_ShihlinCtrl",
                 columns: table => new
                 {
@@ -40,6 +116,82 @@ namespace EquipmentManagement.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ACR_ShihlinCtrl_FileOnDatabasePM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_ShihlinCtrl_FileOnDatabasePM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_ShihlinCtrl_FileOnDatabaseSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_ShihlinCtrl_FileOnDatabaseSR", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_ShihlinCtrl_FileOnFileSystemPM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_ShihlinCtrl_FileOnFileSystemPM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_ShihlinCtrl_FileOnFileSystemSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_ShihlinCtrl_FileOnFileSystemSR", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ACR_SteamSterilizerMSTV",
                 columns: table => new
                 {
@@ -53,6 +205,82 @@ namespace EquipmentManagement.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ACR_SteamSterilizerMSTV", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnDatabasePM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_SteamSterilizerMSTV_FileOnDatabasePM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnDatabaseSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    Data = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_SteamSterilizerMSTV_FileOnDatabaseSR", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnFileSystemPM",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_SteamSterilizerMSTV_FileOnFileSystemPM", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnFileSystemSR",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    FileType = table.Column<string>(nullable: true),
+                    Extension = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UploadedBy = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: true),
+                    FilePath = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ACR_SteamSterilizerMSTV_FileOnFileSystemSR", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -1930,10 +2158,46 @@ namespace EquipmentManagement.Migrations
                 name: "ACR_PumpOnGround");
 
             migrationBuilder.DropTable(
+                name: "ACR_PumpOnGround_FileOnDatabasePM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_PumpOnGround_FileOnDatabaseSR");
+
+            migrationBuilder.DropTable(
+                name: "ACR_PumpOnGround_FileOnFileSystemPM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_PumpOnGround_FileOnFileSystemSR");
+
+            migrationBuilder.DropTable(
                 name: "ACR_ShihlinCtrl");
 
             migrationBuilder.DropTable(
+                name: "ACR_ShihlinCtrl_FileOnDatabasePM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_ShihlinCtrl_FileOnDatabaseSR");
+
+            migrationBuilder.DropTable(
+                name: "ACR_ShihlinCtrl_FileOnFileSystemPM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_ShihlinCtrl_FileOnFileSystemSR");
+
+            migrationBuilder.DropTable(
                 name: "ACR_SteamSterilizerMSTV");
+
+            migrationBuilder.DropTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnDatabasePM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnDatabaseSR");
+
+            migrationBuilder.DropTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnFileSystemPM");
+
+            migrationBuilder.DropTable(
+                name: "ACR_SteamSterilizerMSTV_FileOnFileSystemSR");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");

@@ -24,11 +24,30 @@ namespace EquipmentManagement.Data
         }
 
         public DbSet<EquipmentManagement.Models.ApplicationUser> ApplicationUser { get; set; }
-
+        /// <summary>
+        /// AUTO CLAVE ROOMS DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.ACR_PumpOnGround> ACR_PumpOnGround { get; set; }
         public DbSet<EquipmentManagement.Models.ACR_ShihlinCtrl> ACR_ShihlinCtrl { get; set; }        
         public DbSet<EquipmentManagement.Models.ACR_SteamSterilizerMSTV> ACR_SteamSterilizerMSTV { get; set; }
 
+        public DbSet<ACR_PumpOnGround_FileOnDatabaseModelPM> ACR_PumpOnGround_FileOnDatabasePM { get; set; }
+        public DbSet<ACR_PumpOnGround_FileOnFileSystemModelPM> ACR_PumpOnGround_FileOnFileSystemPM { get; set; }
+        public DbSet<ACR_PumpOnGround_FileOnDatabaseModelSR> ACR_PumpOnGround_FileOnDatabaseSR { get; set; }
+        public DbSet<ACR_PumpOnGround_FileOnFileSystemModelSR> ACR_PumpOnGround_FileOnFileSystemSR { get; set; }
+
+        public DbSet<ACR_ShihlinCtrl_FileOnDatabaseModelPM> ACR_ShihlinCtrl_FileOnDatabasePM { get; set; }
+        public DbSet<ACR_ShihlinCtrl_FileOnFileSystemModelPM> ACR_ShihlinCtrl_FileOnFileSystemPM { get; set; }
+        public DbSet<ACR_ShihlinCtrl_FileOnDatabaseModelSR> ACR_ShihlinCtrl_FileOnDatabaseSR { get; set; }
+        public DbSet<ACR_ShihlinCtrl_FileOnFileSystemModelSR> ACR_ShihlinCtrl_FileOnFileSystemSR { get; set; }
+
+        public DbSet<ACR_SteamSterilizerMSTV_FileOnDatabaseModelPM> ACR_SteamSterilizerMSTV_FileOnDatabasePM { get; set; }
+        public DbSet<ACR_SteamSterilizerMSTV_FileOnFileSystemModelPM> ACR_SteamSterilizerMSTV_FileOnFileSystemPM { get; set; }
+        public DbSet<ACR_SteamSterilizerMSTV_FileOnDatabaseModelSR> ACR_SteamSterilizerMSTV_FileOnDatabaseSR { get; set; }
+        public DbSet<ACR_SteamSterilizerMSTV_FileOnFileSystemModelSR> ACR_SteamSterilizerMSTV_FileOnFileSystemSR { get; set; }
+        /// <summary>
+        /// BIO SAFETY LAB DNA EXTRACTION DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.BSLDNAExt_Centrifuge> BSLDNAExt_Centrifuge { get; set; }
         public DbSet<EquipmentManagement.Models.BSLDNAExt_Centrifuge5424> BSLDNAExt_Centrifuge5424 { get; set; }
         public DbSet<EquipmentManagement.Models.BSLDNAExt_DellDeskComp> BSLDNAExt_DellDeskComp { get; set; }
@@ -45,7 +64,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.BSLDNAExt_PerkinElmerJanusG3> BSLDNAExt_PerkinElmerJanusG3 { get; set; }
         public DbSet<EquipmentManagement.Models.BSLDNAExt_QIAsymphonySP> BSLDNAExt_QIAsymphonySP { get; set; }
         public DbSet<EquipmentManagement.Models.BSLDNAExt_Qubit4Fluorometer> BSLDNAExt_Qubit4Fluorometer { get; set; }
-
+        /// <summary>
+        /// BIO SAFETY LAB SAMPLE MANAGEMENT DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_BioSafetyCabinet> BSLSamMgmt_BioSafetyCabinet { get; set; }
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_BradyPrinteri5100> BSLSamMgmt_BradyPrinteri5100 { get; set; }
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_CenceCentrifugeCL5R> BSLSamMgmt_CenceCentrifugeCL5R { get; set; }
@@ -59,7 +80,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_Refrigerator> BSLSamMgmt_Refrigerator { get; set; }
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_STPlusSeriesCentrifuge> BSLSamMgmt_STPlusSeriesCentrifuge { get; set; }
         public DbSet<EquipmentManagement.Models.BSLSamMgmt_TheromoMixer> BSLSamMgmt_TheromoMixer { get; set; }
-
+        /// <summary>
+        /// CP1 DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.CP1_DellDeskComp> CP1_DellDeskComp { get; set; }
         public DbSet<EquipmentManagement.Models.CP1_ThermoFisher80> CP1_ThermoFisher80 { get; set; }
 
@@ -67,7 +90,9 @@ namespace EquipmentManagement.Data
 
         public DbSet<EquipmentManagement.Models.ILLUMINASeqLab_NovaSeq6000> ILLUMINASeqLab_NovaSeq6000 { get; set; }
         public DbSet<EquipmentManagement.Models.ILLUMINASeqLab_Others> ILLUMINASeqLab_Others { get; set; }
-
+        /// <summary>
+        /// LABORATORY 1 DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.Lab1_DellDeskComp> Lab1_DellDeskComp { get; set; }
         public DbSet<EquipmentManagement.Models.Lab1_Others> Lab1_Others { get; set; }
         public DbSet<EquipmentManagement.Models.Lab2_DellDeskComp> Lab2_DellDeskComp { get; set; }
@@ -76,7 +101,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.Lab3_Others> Lab3_Others { get; set; }
         public DbSet<EquipmentManagement.Models.Lab4_DellDeskComp> Lab4_DellDeskComp { get; set; }
         public DbSet<EquipmentManagement.Models.Lab4_Others> Lab4_Others { get; set; }
-
+        /// <summary>
+        /// MGI LIBRARY CONSTRUCTION LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.MGILibConstLab_TapeStation4200> MGILibConstLab_TapeStation4200 { get; set; }
         public DbSet<EquipmentManagement.Models.MGILibConstLab_Centrifuge5810R> MGILibConstLab_Centrifuge5810R { get; set; }
         public DbSet<EquipmentManagement.Models.MGILibConstLab_Fridge> MGILibConstLab_Fridge { get; set; }
@@ -87,7 +114,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.MGILibConstLab_PureWaterSystem> MGILibConstLab_PureWaterSystem { get; set; }
         public DbSet<EquipmentManagement.Models.MGILibConstLab_ThermalCycler> MGILibConstLab_ThermalCycler { get; set; }
         public DbSet<EquipmentManagement.Models.MGILibConstLab_Vortexer> MGILibConstLab_Vortexer { get; set; }
-
+        /// <summary>
+        /// MGI SEQUENCING LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.MGISeqLab_Cabinet> MGISeqLab_Cabinet { get; set; }
         public DbSet<EquipmentManagement.Models.MGISeqLab_Freezer> MGISeqLab_Freezer { get; set; }
         public DbSet<EquipmentManagement.Models.MGISeqLab_G400> MGISeqLab_G400 { get; set; }
@@ -100,10 +129,14 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.MGISeqLab_T7> MGISeqLab_T7 { get; set; }
         public DbSet<EquipmentManagement.Models.MGISeqLab_T7Loader> MGISeqLab_T7Loader { get; set; }
         public DbSet<EquipmentManagement.Models.MGISeqLab_Ztron> MGISeqLab_Ztron { get; set; }
-
+        /// <summary>
+        /// ONT LIBRARY CONSTRUCTION LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.ONTLibConstLab_MicroLabNGSSTAR> ONTLibConstLab_MicroLabNGSSTAR { get; set; }
         public DbSet<EquipmentManagement.Models.ONTLibConstLab_DellDeskComp> ONTLibConstLab_DellDeskComp { get; set; }
-
+        /// <summary>
+        /// ONT SEQUENCING LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.ONTSeqLab_Centrifuge5424> ONTSeqLab_Centrifuge5424 { get; set; }
         public DbSet<EquipmentManagement.Models.ONTSeqLab_Centrifuge5810R> ONTSeqLab_Centrifuge5810R { get; set; }
         public DbSet<EquipmentManagement.Models.ONTSeqLab_DellDeskComp> ONTSeqLab_DellDeskComp { get; set; }
@@ -114,7 +147,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.ONTSeqLab_PromethIONDataAcqTower> ONTSeqLab_PromethIONDataAcqTower { get; set; }
         public DbSet<EquipmentManagement.Models.ONTSeqLab_PromethIONSeqUnit> ONTSeqLab_PromethIONSeqUnit { get; set; }
         public DbSet<EquipmentManagement.Models.ONTSeqLab_ThermofisherSciFridge> ONTSeqLab_ThermofisherSciFridge { get; set; }
-
+        /// <summary>
+        /// R & D LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.RDLab_BioSafetyCabinet> RDLab_BioSafetyCabinet { get; set; }
         public DbSet<EquipmentManagement.Models.RDLab_Centrifuge5424R> RDLab_Centrifuge5424R { get; set; }
         public DbSet<EquipmentManagement.Models.RDLab_CompactDrybathS> RDLab_CompactDrybathS { get; set; }
@@ -139,7 +174,9 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.RDLab_ThermalCycler> RDLab_ThermalCycler { get; set; }
         public DbSet<EquipmentManagement.Models.RDLab_ThermoScientificMyspin6> RDLab_ThermoScientificMyspin6 { get; set; }
         public DbSet<EquipmentManagement.Models.RDLab_ThermoScientificMyspin12> RDLab_ThermoScientificMyspin12 { get; set; }
-
+        /// <summary>
+        /// ROBOTICS LAB DBCONTEXT
+        /// </summary>
         public DbSet<EquipmentManagement.Models.RoboticsLab_DellDeskComp> RoboticsLab_DellDeskComp { get; set; }
         public DbSet<EquipmentManagement.Models.RoboticsLab_MicroLabNIMBUS> RoboticsLab_MicroLabNIMBUS { get; set; }
         public DbSet<EquipmentManagement.Models.RoboticsLab_MicroLabSTAR> RoboticsLab_MicroLabSTAR { get; set; }

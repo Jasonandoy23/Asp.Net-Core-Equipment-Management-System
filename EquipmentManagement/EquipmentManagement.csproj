@@ -48,6 +48,18 @@
     <Compile Remove="Migrations\20201019153201_InitialDB6.Designer.cs" />
     <Compile Remove="Migrations\20201019175716_InitialDB7.cs" />
     <Compile Remove="Migrations\20201019175716_InitialDB7.Designer.cs" />
+    <Compile Remove="Migrations\20201019200126_InitialDB.cs" />
+    <Compile Remove="Migrations\20201019200126_InitialDB.Designer.cs" />
+    <Compile Remove="Migrations\20201101092244_InitialDB2.cs" />
+    <Compile Remove="Migrations\20201101092244_InitialDB2.Designer.cs" />
+    <Compile Remove="Migrations\20201101093044_InitialDB2.cs" />
+    <Compile Remove="Migrations\20201101093044_InitialDB2.Designer.cs" />
+    <Compile Remove="Migrations\20201101093238_InitialDB1.cs" />
+    <Compile Remove="Migrations\20201101093238_InitialDB1.Designer.cs" />
+    <Compile Remove="Migrations\20201102055917_InitialDB1.cs" />
+    <Compile Remove="Migrations\20201102055917_InitialDB1.Designer.cs" />
+    <Compile Remove="Migrations\20201102061109_InitialDB2.cs" />
+    <Compile Remove="Migrations\20201102061109_InitialDB2.Designer.cs" />
   </ItemGroup>
 
 
@@ -67,6 +79,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
   </ItemGroup>
 
 </Project>

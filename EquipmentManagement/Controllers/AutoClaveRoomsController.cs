@@ -29,5 +29,6 @@ namespace EquipmentManagement.Controllers
         {
             return View();
         }
+
     }
 }
