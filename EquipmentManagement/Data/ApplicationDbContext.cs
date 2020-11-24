@@ -32,19 +32,15 @@ namespace EquipmentManagement.Data
         public DbSet<EquipmentManagement.Models.ACR_SteamSterilizerMSTV> ACR_SteamSterilizerMSTV { get; set; }
 
         public DbSet<ACR_PumpOnGround_FileOnDatabaseModelPM> ACR_PumpOnGround_FileOnDatabasePM { get; set; }
-        public DbSet<ACR_PumpOnGround_FileOnFileSystemModelPM> ACR_PumpOnGround_FileOnFileSystemPM { get; set; }
         public DbSet<ACR_PumpOnGround_FileOnDatabaseModelSR> ACR_PumpOnGround_FileOnDatabaseSR { get; set; }
-        public DbSet<ACR_PumpOnGround_FileOnFileSystemModelSR> ACR_PumpOnGround_FileOnFileSystemSR { get; set; }
 
         public DbSet<ACR_ShihlinCtrl_FileOnDatabaseModelPM> ACR_ShihlinCtrl_FileOnDatabasePM { get; set; }
         public DbSet<ACR_ShihlinCtrl_FileOnFileSystemModelPM> ACR_ShihlinCtrl_FileOnFileSystemPM { get; set; }
         public DbSet<ACR_ShihlinCtrl_FileOnDatabaseModelSR> ACR_ShihlinCtrl_FileOnDatabaseSR { get; set; }
-        public DbSet<ACR_ShihlinCtrl_FileOnFileSystemModelSR> ACR_ShihlinCtrl_FileOnFileSystemSR { get; set; }
 
         public DbSet<ACR_SteamSterilizerMSTV_FileOnDatabaseModelPM> ACR_SteamSterilizerMSTV_FileOnDatabasePM { get; set; }
         public DbSet<ACR_SteamSterilizerMSTV_FileOnFileSystemModelPM> ACR_SteamSterilizerMSTV_FileOnFileSystemPM { get; set; }
         public DbSet<ACR_SteamSterilizerMSTV_FileOnDatabaseModelSR> ACR_SteamSterilizerMSTV_FileOnDatabaseSR { get; set; }
-        public DbSet<ACR_SteamSterilizerMSTV_FileOnFileSystemModelSR> ACR_SteamSterilizerMSTV_FileOnFileSystemSR { get; set; }
         /// <summary>
         /// BIO SAFETY LAB DNA EXTRACTION DBCONTEXT
         /// </summary>

@@ -1,6 +1,6 @@
 ﻿@model ACR_PumpOnGround_FileUploadViewModelPM
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "PUMP ( on ground ) ";
 }
 <div class="content-wrapper">
     <section class="content">
@@ -22,21 +22,20 @@
                 <!-- Custom Tabs -->
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-
                         <li class="@Html.IsSelected(controller: MainMenu.ACR_PumpOnGround.ControllerName, action: MainMenu.ACR_PumpOnGround.ActionName)">
                             <a href="@MainMenu.ACR_PumpOnGround.Path">
                                 <i class="fa fa-heartbeat"></i> <span>Equipment Daily Status</span>
                             </a>
                         </li>
-
                         <li class="@Html.IsSelected(controller: Tabs.ACR_PumpOnGround_PM.ControllerName, action: Tabs.ACR_PumpOnGround_PM.ActionName)">
                             <a href="@Tabs.ACR_PumpOnGround_PM.Path">
                                 <i class="fa fa-gears"></i> <span>@Tabs.ACR_PumpOnGround_PM.PageName</span>
                             </a>
                         </li>
-
-                        <li class="">
-                            <a href="#tab_3" data-toggle="tab" aria-expanded="false"><i class="fa fa-list-alt"></i> Service Report</a>
+                        <li class="@Html.IsSelected(controller: Tabs.ACR_PumpOnGround_SR.ControllerName, action: Tabs.ACR_PumpOnGround_SR.ActionName)">
+                            <a href="@Tabs.ACR_PumpOnGround_SR.Path">
+                                <i class="fa fa-gears"></i> <span>@Tabs.ACR_PumpOnGround_SR.PageName</span>
+                            </a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -46,7 +45,7 @@
                         </div>
                         <!-- PREVENTIVE MAINTENANCE -->
                         <div class="tab-pane active" id="tab_2">
-                            <h4>Start Uploading Files Here</h4>
+                            <h4>Upload Preventive Maintenance Files</h4>
                             <hr />
                             @if (ViewBag.Message != null)
                             {
@@ -56,20 +55,19 @@
                             }
                             <form method="post" enctype="multipart/form-data">
                                 <input type="file" name="files" multiple required />
-                                <input type="text" autocomplete="off" placeholder="Enter File Description" name="description" required />
-                                <button class="btn btn-success" type="submit" asp-controller="File" asp-action="UploadToDatabase">Upload to Database</button>
+                                <input type="text" style="min-width:50%" autocomplete="off" placeholder="Enter File Description" name="description" required />
+                                <button class="btn btn-success" type="submit" asp-controller="ACR_PumpOnGround_PM" asp-action="UploadToDatabase">Upload</button>
                             </form>
                             <hr />
                             
                             <hr />
-                            <h4>Files on Database</h4>
+                            <h4>Files Uploaded</h4>
                             @if (Model.ACR_PumpOnGround_FilesOnDatabasePM.Count == 0)
                             {
                                 <caption>No Records Found</caption>
                             }
                             else
                             {
-                                <caption>List of Files on Database</caption>
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
@@ -91,8 +89,8 @@
                                                 <td>@file.FileType</td>
                                                 <td>@file.CreatedOn</td>
                                                 <td>
-                                                    <a type="button" class="btn btn-primary" asp-controller="File" asp-action="DownloadFileFromDatabase" asp-route-id="@file.Id">Download</a>
-                                                    <a type="button" class="btn btn-danger" asp-controller="File" asp-action="DeleteFileFromDatabase" asp-route-id="@file.Id">Delete</a>
+                                                    <a type="button" class="btn btn-primary" asp-controller="ACR_PumpOnGround_PM" asp-action="DownloadFileFromDatabase" asp-route-id="@file.Id">Download</a>
+                                                    <a type="button" class="btn btn-danger" asp-controller="ACR_PumpOnGround_PM" asp-action="DeleteFileFromDatabase" asp-route-id="@file.Id">Delete</a>
                                                 </td>
                                             </tr>
                                         }

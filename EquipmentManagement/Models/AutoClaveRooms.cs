@@ -38,14 +38,9 @@ namespace EquipmentManagement.Models
     {
         public byte[] Data { get; set; }
     }
-    public class ACR_PumpOnGround_FileOnFileSystemModelPM : ACR_PumpOnGround_FileModelPM
-    {
-        public string FilePath { get; set; }
-    }
     public class ACR_PumpOnGround_FileUploadViewModelPM
     {
         public List<ACR_PumpOnGround_FileOnDatabaseModelPM> ACR_PumpOnGround_FilesOnDatabasePM { get; set; }
-        public List<ACR_PumpOnGround_FileOnFileSystemModelPM> ACR_PumpOnGround_FilesOnFileSystemPM { get; set; }
     }
     /// 
     /// ACR_PumpOnGround FILE HANDLING SERVICE REPORT
@@ -64,14 +59,9 @@ namespace EquipmentManagement.Models
     {
         public byte[] Data { get; set; }
     }
-    public class ACR_PumpOnGround_FileOnFileSystemModelSR : ACR_PumpOnGround_FileModelSR
-    {
-        public string FilePath { get; set; }
-    }
     public class ACR_PumpOnGround_FileUploadViewModelSR
     {
         public List<ACR_PumpOnGround_FileOnDatabaseModelSR> ACR_PumpOnGround_FilesOnDatabaseSR { get; set; }
-        public List<ACR_PumpOnGround_FileOnFileSystemModelSR> ACR_PumpOnGround_FilesOnFileSystemSR { get; set; }
     }
     /// 
     /// ACR_ShihlinCtrl FILE HANDLING PREVENTIVE MAINTENANCE
@@ -117,14 +107,8 @@ namespace EquipmentManagement.Models
     {
         public byte[] Data { get; set; }
     }
-    public class ACR_ShihlinCtrl_FileOnFileSystemModelSR : ACR_ShihlinCtrl_FileModelSR
-    {
-        public string FilePath { get; set; }
-    }
     public class ACR_ShihlinCtrl_FileUploadViewModelSR
     {
-        public List<ACR_ShihlinCtrl_FileOnFileSystemModelSR> ACR_ShihlinCtrl_FilesOnFileSystemSR { get; set; }
-
         public List<ACR_ShihlinCtrl_FileOnDatabaseModelSR> ACR_ShihlinCtrl_FilesOnDatabaseSR { get; set; }
     }
     /// 
@@ -171,14 +155,8 @@ namespace EquipmentManagement.Models
     {
         public byte[] Data { get; set; }
     }
-    public class ACR_SteamSterilizerMSTV_FileOnFileSystemModelSR : ACR_SteamSterilizerMSTV_FileModelSR
-    {
-        public string FilePath { get; set; }
-    }
     public class ACR_SteamSterilizerMSTV_FileUploadViewModelSR
     {
-        public List<ACR_SteamSterilizerMSTV_FileOnFileSystemModelSR> ACR_SteamSterilizerMSTV_FilesOnFileSystemSR { get; set; }
-
         public List<ACR_SteamSterilizerMSTV_FileOnDatabaseModelSR> ACR_SteamSterilizerMSTV_FilesOnDatabaseSR { get; set; }
     }
 }

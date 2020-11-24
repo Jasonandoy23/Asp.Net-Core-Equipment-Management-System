@@ -1,6 +1,6 @@
-﻿@model ACR_PumpOnGround_FileUploadViewModelPM
+﻿@model ACR_ShihlinCtrl_FileUploadViewModelSR
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Shihlin Controller";
 }
 <div class="content-wrapper">
     <section class="content">
@@ -22,21 +22,20 @@
                 <!-- Custom Tabs -->
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-
-                        <li class="@Html.IsSelected(controller: MainMenu.ACR_PumpOnGround.ControllerName, action: MainMenu.ACR_PumpOnGround.ActionName)">
-                            <a href="@MainMenu.ACR_PumpOnGround.Path">
+                        <li class="@Html.IsSelected(controller: MainMenu.ACR_ShihlinCtrl.ControllerName, action: MainMenu.ACR_ShihlinCtrl.ActionName)">
+                            <a href="@MainMenu.ACR_ShihlinCtrl.Path">
                                 <i class="fa fa-heartbeat"></i> <span>Equipment Daily Status</span>
                             </a>
                         </li>
-
-                        <li class="@Html.IsSelected(controller: Tabs.ACR_PumpOnGround_PM.ControllerName, action: Tabs.ACR_PumpOnGround_PM.ActionName)">
-                            <a href="@Tabs.ACR_PumpOnGround_PM.Path">
-                                <i class="fa fa-gears"></i> <span>@Tabs.ACR_PumpOnGround_PM.PageName</span>
+                        <li class="@Html.IsSelected(controller: Tabs.ACR_ShihlinCtrl_PM.ControllerName, action: Tabs.ACR_ShihlinCtrl_PM.ActionName)">
+                            <a href="@Tabs.ACR_ShihlinCtrl_PM.Path">
+                                <i class="fa fa-gears"></i> <span>@Tabs.ACR_ShihlinCtrl_PM.PageName</span>
                             </a>
                         </li>
-
-                        <li class="">
-                            <a href="#tab_3" data-toggle="tab" aria-expanded="false"><i class="fa fa-list-alt"></i> Service Report</a>
+                        <li class="@Html.IsSelected(controller: Tabs.ACR_ShihlinCtrl_SR.ControllerName, action: Tabs.ACR_ShihlinCtrl_SR.ActionName)">
+                            <a href="@Tabs.ACR_ShihlinCtrl_SR.Path">
+                                <i class="fa fa-gears"></i> <span>@Tabs.ACR_ShihlinCtrl_SR.PageName</span>
+                            </a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -45,8 +44,12 @@
                             EQUIPMENT DAILY STATUS CONTENT
                         </div>
                         <!-- PREVENTIVE MAINTENANCE -->
-                        <div class="tab-pane active" id="tab_2">
-                            <h4>Start Uploading Files Here</h4>
+                        <div class="tab-pane" id="tab_2">
+                            Preventive Maintenance Content
+                        </div>
+                        <!-- SERVICE REPORT -->
+                        <div class="tab-pane active" id="tab_3">
+                            <h4>Upload Preventive Maintenance Files</h4>
                             <hr />
                             @if (ViewBag.Message != null)
                             {
@@ -56,20 +59,19 @@
                             }
                             <form method="post" enctype="multipart/form-data">
                                 <input type="file" name="files" multiple required />
-                                <input type="text" autocomplete="off" placeholder="Enter File Description" name="description" required />
-                                <button class="btn btn-success" type="submit" asp-controller="File" asp-action="UploadToDatabase">Upload to Database</button>
+                                <input type="text" style="min-width:50%" autocomplete="off" placeholder="Enter File Description" name="description" required />
+                                <button class="btn btn-success" type="submit" asp-controller="ACR_ShihlinCtrl_SR" asp-action="UploadToDatabase">Upload</button>
                             </form>
                             <hr />
-                            
+
                             <hr />
-                            <h4>Files on Database</h4>
-                            @if (Model.ACR_PumpOnGround_FilesOnDatabasePM.Count == 0)
+                            <h4>Files Uploaded</h4>
+                            @if (Model.ACR_ShihlinCtrl_FilesOnDatabaseSR.Count == 0)
                             {
                                 <caption>No Records Found</caption>
                             }
                             else
                             {
-                                <caption>List of Files on Database</caption>
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
@@ -82,7 +84,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach (var file in Model.ACR_PumpOnGround_FilesOnDatabasePM)
+                                        @foreach (var file in Model.ACR_ShihlinCtrl_FilesOnDatabaseSR)
                                         {
                                             <tr>
                                                 <th>@file.Id</th>
@@ -91,8 +93,8 @@
                                                 <td>@file.FileType</td>
                                                 <td>@file.CreatedOn</td>
                                                 <td>
-                                                    <a type="button" class="btn btn-primary" asp-controller="File" asp-action="DownloadFileFromDatabase" asp-route-id="@file.Id">Download</a>
-                                                    <a type="button" class="btn btn-danger" asp-controller="File" asp-action="DeleteFileFromDatabase" asp-route-id="@file.Id">Delete</a>
+                                                    <a type="button" class="btn btn-primary" asp-controller="ACR_ShihlinCtrl_SR" asp-action="DownloadFileFromDatabase" asp-route-id="@file.Id">Download</a>
+                                                    <a type="button" class="btn btn-danger" asp-controller="ACR_ShihlinCtrl_SR" asp-action="DeleteFileFromDatabase" asp-route-id="@file.Id">Delete</a>
                                                 </td>
                                             </tr>
                                         }
@@ -100,10 +102,6 @@
                                     </tbody>
                                 </table>
                             }
-                        </div>
-                        <!-- SERVICE REPORT -->
-                        <div class="tab-pane" id="tab_3">
-                            Service Report CONTENT
                         </div>
                         <!-- /.tab-pane -->
                     </div>
